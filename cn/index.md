@@ -334,11 +334,11 @@ title: 首页
 
 <div class="hero-section">
     <h1 class="hero-title">中国药科大学功能基因组学实验室</h1>
-    <p class="hero-subtitle">我们致力于解析遗传变异如何影响人类疾病与表型。通过整合群体遗传学分析与前沿基因组学技术，系统揭示基因突变调控表型及疾病风险的分子机制，并挖掘潜在的新药靶点，助力精准医疗。</p>
+    <p class="hero-subtitle">解析遗传变异驱动疾病与表型差异的分子机制，挖掘新药靶点，推动精准医学发展。</p>
     <div class="hero-tags">
         <span class="hero-tag">遗传突变功能解析</span>
         <span class="hero-tag">疾病发生与人类进化</span>
-        <span class="hero-tag">高通量基因组学技术</span>
+        <span class="hero-tag">高通量组学技术</span>
     </div>
 </div>
 

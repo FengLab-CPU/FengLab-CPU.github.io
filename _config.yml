@@ -1,9 +1,9 @@
 title: Yuanqing Feng (冯园庆)
 email: Fengyuanqing2010@gmail.com
 description: >- 
-  Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.
+  I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fengyq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://fenglab-cpu.github.io/" # the base hostname 
 
 # Build settings
 markdown: kramdown
@@ -34,9 +34,9 @@ navigation_cn:
     url: /cn/
   - title: 研究
     url: /cn/research/
-  - title: 发表论文
+  - title: 论文
     url: /cn/publications/
-  - title: 团队成员
+  - title: 团队
     url: /cn/people/
   - title: 新闻
     url: /cn/news/
@@ -48,10 +48,9 @@ navigation_cn:
 # Social links
 social_links:
   google_scholar: nWYWiVUAAAAJ
-  github: fengyq
+  github: fenglab-cpu
   linkedin: yuanqing-feng-a4384477
   twitter: FengYuanqing
-  wechat: FengYuanqing
 
 # Other settings
 show_excerpts: true 

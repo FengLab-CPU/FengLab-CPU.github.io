@@ -173,7 +173,7 @@ permalink: /cn/contact/
     <div class="contact-header">
         <h1 class="contact-title">联系我们</h1>
         <p class="contact-subtitle">
-            欢迎就课题组研究、合作机会以及人员招聘等事宜与我们联系。您可以通过以下方式与我们取得联系。
+                欢迎就本实验室的研究方向、科研合作或人才招聘等事宜与我们联系。联系方式如下：
         </p>
     </div>
     <div class="contact-section">

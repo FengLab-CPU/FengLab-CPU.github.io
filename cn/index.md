@@ -97,7 +97,7 @@ title: 首页
         border-radius: 9999px;
         border: 1px solid rgba(148, 163, 184, 0.9);
         background: transparent;
-        font-size: 0.95rem;
+        font-size: 1.15rem;
         font-weight: 600;
         letter-spacing: 0.06em;
         color: #111827;
@@ -334,10 +334,9 @@ title: 首页
 
 <div class="hero-section">
     <h1 class="hero-title">中国药科大学功能基因组学实验室</h1>
-    <p class="hero-subtitle">我们致力于研究遗传变异如何影响人类疾病发生和表型差异。利用群体遗传学分析和前沿的基因组学技术，系统阐明人类基因突变调控表型和
-疾病风险的分子机制，并从中挖掘潜在新药靶点，助力精准医疗。</p>
+    <p class="hero-subtitle">我们致力于解析遗传变异如何影响人类疾病与表型。通过整合群体遗传学分析与前沿基因组学技术，系统揭示基因突变调控表型及疾病风险的分子机制，并挖掘潜在的新药靶点，助力精准医疗。</p>
     <div class="hero-tags">
-        <span class="hero-tag">遗传突变功功能解析</span>
+        <span class="hero-tag">遗传突变功能解析</span>
         <span class="hero-tag">疾病发生与人类进化</span>
         <span class="hero-tag">高通量基因组学技术</span>
     </div>

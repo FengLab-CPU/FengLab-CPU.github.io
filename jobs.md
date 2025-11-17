@@ -300,8 +300,8 @@ permalink: /jobs/
             </div>
             
             <div class="job-card fade-in">
-                <h3 class="job-title">Graduate Student Rotation</h3>
-                <span class="job-type">Rotation</span>
+                <h3 class="job-title">Graduate Student</h3>
+                <span class="job-type">Full-time</span>
                 <p class="job-description">
                     Graduate students interested in functional genomics, computational biology, or human genetics are welcome to rotate in our lab. We offer exciting projects at the intersection of experimental and computational biology.
                 </p>

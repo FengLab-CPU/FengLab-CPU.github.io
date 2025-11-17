@@ -52,7 +52,7 @@ title: People
     .people-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr) !important;
-        gap: 0.6rem;
+        gap: 0.36rem;
         margin-bottom: 3rem;
         width: 100%;
         box-sizing: border-box;
@@ -70,7 +70,7 @@ title: People
         transition: all 0.3s ease;
         border: 2px solid transparent;
         box-shadow: var(--shadow-light);
-        min-height: 210px;
+        min-height: 168px;
         transform: scale(0.75);
         transform-origin: center;
     }
@@ -85,7 +85,7 @@ title: People
         width: clamp(140px, 65%, 240px);
         aspect-ratio: 5 / 7;
         border-radius: 0;
-        margin: 0 auto 0.75rem;
+        margin: 0 auto 0.45rem;
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         border: 0.6px solid var(--border-color);
         display: flex;
@@ -105,7 +105,7 @@ title: People
         font-size: 1.4rem;
         font-weight: 600;
         color: #2f4f4f;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         letter-spacing: -0.3px;
     }
@@ -113,7 +113,7 @@ title: People
     .person-title {
         font-size: 1.15rem;
         color: var(--primary-color);
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.18rem;
         font-weight: 500;
     }
     

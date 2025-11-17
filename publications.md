@@ -99,19 +99,19 @@ title: Publications
 
     .pub-figure {
         flex: 0 0 173px;
-        height: 150px;
+        width: 60%;
         border-radius: 12px;
         border: 1px solid #e2e8f0;
         background: #f8f9fa;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        margin: 0 auto;
     }
 
     .pub-figure img {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: contain;
         transition: transform 0.3s ease;
         border-radius: 12px;
@@ -200,7 +200,6 @@ title: Publications
         }
         
         .pub-figure {
-            height: 200px;
             max-width: 300px;
             margin: 0 auto;
         }
@@ -236,10 +235,6 @@ title: Publications
 </style>
 
 <div class="publications-container">
-    <div class="publications-subtitle">
-        (For a complete list of publications, please visit my <a href="https://scholar.google.com/citations?user=nWYWiVUAAAAJ&hl=en">Google Scholar profile</a>.)
-    </div>
-
     <div class="pub-filter-bar">
         <button class="pub-filter-btn active" data-year-filter="all">All</button>
         <button class="pub-filter-btn" data-year-filter="2024">2024</button>
@@ -247,6 +242,9 @@ title: Publications
         <button class="pub-filter-btn" data-year-filter="2022">2022</button>
         <button class="pub-filter-btn" data-year-filter="2021">2021</button>
         <button class="pub-filter-btn" data-year-filter="2015">2015</button>
+    </div>
+    <div class="publications-subtitle">
+        (For a complete list of publications, please visit my <a href="https://scholar.google.com/citations?user=nWYWiVUAAAAJ&hl=en">Google Scholar profile</a>.)
     </div>
 
     <h2 class="pub-year-heading" data-year="2024">2024</h2>

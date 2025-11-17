@@ -238,56 +238,56 @@ permalink: /cn/jobs/
 
 <div class="jobs-container">
     <div class="jobs-header">
-        <h1 class="jobs-title">加入我们的团队</h1>
+        <h1 class="jobs-title">加入我们团队</h1>
         <p class="jobs-subtitle">
-            我们欢迎对功能基因组学和人类遗传学感兴趣的同学和研究人员加入。我们也欢迎其他交叉背景的优秀人才加入或者合作，共同探索新方向。
+            欢迎功能基因组学及相关领域的优秀人才加入或合作，共探新方向。
         </p>
     </div>
 
     <div class="jobs-section">
         <div class="jobs-grid">
             <div class="job-card">
-                <h3 class="job-title">博士后研究员</h3>
-                <span class="job-type">全职 / Postdoc</span>
+                <h3 class="job-title">博士后 / 研究员</h3>
+                <span class="job-type">全职</span>
                 <p class="job-description">
-                    我们在招聘对功能基因组学和人类遗传学感兴趣的博士后。您将参与到功能基因组学技术开发项目中。
+                    功能基因组学和人类遗传学相关领域。
                 </p>
 
                 <div class="job-requirements">
                     <h4>岗位要求：</h4>
                     <ul>
-                        <li>教育背景：拥有遗传学、分子生物学、生物信息学或相关领域的博士学位。</li>
-                        <li>科研经验：具备功能基因组学实验经验（如MPRA、CRISPR筛选等）者优先考虑。</li>
-                        <li>技术能力：具备良好的编程和数据分析能力（如Python/R等）。</li>
-                        <li>学术成果：有高质量学术论文发表记录。</li>
-                        <li>综合素质：具备良好的沟通能力和团队协作精神。</li>
+                        <li><strong>教育背景：</strong>遗传学、分子生物学、生物信息学或相关领域博士学位。</li>
+                        <li><strong>科研经验：</strong>有功能基因组学实验经验（如MPRA、CRISPR筛选等）者优先。</li>
+                        <li><strong>技术能力：</strong>熟练掌握Python/R等编程语言，具备数据分析能力。</li>
+                        <li><strong>学术成果：</strong>有高质量论文发表记录。</li>
+                        <li><strong>综合素质：</strong>良好的沟通能力与团队合作精神。</li>
                     </ul>
                 </div>
             </div>
 
             <div class="job-card">
-                <h3 class="job-title">研究生轮转 / 博士生</h3>
-                <span class="job-type">轮转 / 全职学生</span>
-                <p class="job-description">
-                    欢迎对功能基因组学或人类遗传学感兴趣的研究生加入本课题组，开展实验和计算结合的交叉研究。
-                </p>
+                <h3 class="job-title">研究生</h3>
+                <span class="job-type">全职/轮转</span>
+            <p class="job-description">
+                欢迎对功能基因组学或人类遗传学感兴趣的研究生加入课题组，开展实验与计算相结合的交叉研究。
+            </p>
 
-                <div class="job-requirements">
-                    <h4>岗位要求：</h4>
-                    <ul>
-                        <li>目前在相关专业研究生项目在读或即将入学</li>
-                        <li>对基因组学和人类疾病研究有浓厚兴趣</li>
-                        <li>具有一定编程或数据分析基础者优先</li>
-                        <li>具有主动学习和独立科研能力</li>
-                    </ul>
-                </div>
+            <div class="job-requirements">
+                <h4>岗位要求：</h4>
+                <ul>
+                    <li>相关专业在读或即将入学的研究生</li>
+                    <li>对基因组学与人类疾病研究有浓厚兴趣</li>
+                    <li>具备一定编程或数据分析基础者优先</li>
+                    <li>具有主动学习能力和独立科研潜力</li>
+                </ul>
+            </div>
             </div>
         </div>
 
         <div class="no-positions" style="margin-top: 2rem;">
             <h3>其他机会</h3>
             <p>
-                如果希望加入我们或开展合作，请发送邮件并附上简历与研究兴趣简介。
+                欢迎有意加入或合作的朋友发送邮件联系。
             </p>
             <p><a href="mailto:fengyuanqing2010@gmail.com" class="contact-email">fengyuanqing2010@gmail.com</a></p>
         </div>

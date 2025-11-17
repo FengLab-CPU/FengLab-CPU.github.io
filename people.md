@@ -476,9 +476,6 @@ title: People
                 <div class="person-info">
                     <div class="person-name">Yuanqing Feng</div>
                     <div class="person-title">Principal Investigator</div>
-                    <div class="person-contact">
-                        <a href="mailto:Fengyuanqing2010@gmail.com">fengyuanqing2010@gmail.com</a>
-                    </div>
                 </div>
             </div>
             

@@ -1,7 +1,7 @@
 title: Yuanqing Feng (冯园庆)
 email: Fengyuanqing2010@gmail.com
 description: >- 
-  Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.
+  Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fengyq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -27,6 +27,23 @@ navigation:
     url: /jobs/
   - title: Contact
     url: /contact/
+
+# Chinese Navigation
+navigation_cn:
+  - title: 主页
+    url: /cn/
+  - title: 研究
+    url: /cn/research/
+  - title: 发表论文
+    url: /cn/publications/
+  - title: 团队成员
+    url: /cn/people/
+  - title: 新闻
+    url: /cn/news/
+  - title: 招聘
+    url: /cn/jobs/
+  - title: 联系方式
+    url: /cn/contact/
 
 # Social links
 social_links:

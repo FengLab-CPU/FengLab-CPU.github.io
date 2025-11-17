@@ -1,61 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Yuanqing Feng (冯园庆)</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Publications | Yuanqing Feng (冯园庆)</title>
-<meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Publications" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
-<meta property="og:description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
-<link rel="canonical" href="http://localhost:4001/publications/" />
-<meta property="og:url" content="http://localhost:4001/publications/" />
-<meta property="og:site_name" content="Yuanqing Feng (冯园庆)" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Publications" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"Publications","url":"http://localhost:4001/publications/"}</script>
-<!-- End Jekyll SEO tag -->
+---
+layout: default
+title: Publications
+---
 
-</head>
-<body>
-    <header class="site-header">
-        <div class="header-container">
-            <nav class="main-nav">
-                
-                
-                <a href="/" >Home</a>
-                
-                <a href="/research/" >Research</a>
-                
-                <a href="/publications/" class="active">Publications</a>
-                
-                <a href="/people/" >People</a>
-                
-                <a href="/news/" >News</a>
-                
-                <a href="/jobs/" >Jobs</a>
-                
-                <a href="/contact/" >Contact</a>
-                
-            </nav>
-            <div class="lang-toggle">
-                
-                    
-                    <a href="/cn/publications/" class="lang-btn">Chinese</a>
-                
-            </div>
-        </div>
-    </header>
-
-    <main class="content">
-        <style>
+<style>
     :root {
         --primary-color: #2C5F2D;
         --secondary-color: #1E2761;
@@ -289,7 +237,7 @@
 
 <div class="publications-container">
     <div class="publications-subtitle">
-        (For a complete list of publications, please visit my <a href="https://scholar.google.com/citations?user=nWYWiVUAAAAJ&amp;hl=en">Google Scholar profile</a>.)
+        (For a complete list of publications, please visit my <a href="https://scholar.google.com/citations?user=nWYWiVUAAAAJ&hl=en">Google Scholar profile</a>.)
     </div>
 
     <div class="pub-filter-bar">
@@ -305,7 +253,7 @@
 
     <div class="publication-item fade-in" data-year="2024">
         <div class="pub-figure">
-            <img src="../assets/pub_images/2024_NG_cover.png" alt="Nature Genetics cover showing skin pigmentation diversity in Africans" style="width: 100%; height: auto; object-fit: contain;" />
+            <img src="/assets/pub_images/2024_NG_cover.png" alt="Nature Genetics cover showing skin pigmentation diversity in Africans" style="width: 100%; height: auto; object-fit: contain;">
         </div>
         <div class="pub-content">
             <div class="pub-title">
@@ -326,7 +274,7 @@
 
     <div class="publication-item fade-in" data-year="2024">
         <div class="pub-figure">
-            <img src="../assets/pub_images/2024_NG_cover.png" alt="Nature Genetics cover showing skin pigmentation diversity in Africans" style="width: 100%; height: auto; object-fit: contain;" />
+            <img src="/assets/pub_images/2024_NG_cover.png" alt="Nature Genetics cover showing skin pigmentation diversity in Africans" style="width: 100%; height: auto; object-fit: contain;">
         </div>
         <div class="pub-content">
             <div class="pub-title">
@@ -349,7 +297,7 @@
 
     <div class="publication-item fade-in" data-year="2023">
         <div class="pub-figure">
-            <img src="../assets/pub_images/2021_cell_cover.jpg" alt="Cell journal cover showing African population evolution" style="width: 100%; height: auto; object-fit: contain;" />
+            <img src="/assets/pub_images/2021_cell_cover.jpg" alt="Cell journal cover showing African population evolution" style="width: 100%; height: auto; object-fit: contain;">
         </div>
         <div class="pub-content">
             <div class="pub-title">
@@ -372,7 +320,7 @@
 
     <div class="publication-item fade-in" data-year="2022">
         <div class="pub-figure">
-            <img src="../assets/pub_images/2022_pnas_cover.jpg" alt="SARS-CoV-2 research visualization" style="width: 100%; height: auto; object-fit: contain;" />
+            <img src="/assets/pub_images/2022_pnas_cover.jpg" alt="SARS-CoV-2 research visualization" style="width: 100%; height: auto; object-fit: contain;">
         </div>
         <div class="pub-content">
             <div class="pub-title">
@@ -395,7 +343,7 @@
 
     <div class="publication-item fade-in" data-year="2021">
         <div class="pub-figure">
-            <img src="../assets/pub_images/2021_hmg_cover.jpeg" alt="Skin pigmentation genetics research" style="width: 100%; height: auto; object-fit: contain;" />
+            <img src="/assets/pub_images/2021_hmg_cover.jpeg" alt="Skin pigmentation genetics research" style="width: 100%; height: auto; object-fit: contain;">
         </div>
         <div class="pub-content">
             <div class="pub-title">
@@ -416,7 +364,7 @@
 
     <div class="publication-item fade-in" data-year="2021">
         <div class="pub-figure">
-            <img src="../assets/pub_images/2021_mbe_cover.jpg" alt="TRIM72 expression research" style="width: 100%; height: auto; object-fit: contain;" />
+            <img src="/assets/pub_images/2021_mbe_cover.jpg" alt="TRIM72 expression research" style="width: 100%; height: auto; object-fit: contain;">
         </div>
         <div class="pub-content">
             <div class="pub-title">
@@ -439,7 +387,7 @@
 
     <div class="publication-item" data-year="2015">
         <div class="pub-figure">
-            <img src="../assets/pub_images/2015_circulation_cover.jpg" alt="Heart research visualization" style="width: 100%; height: auto; object-fit: contain;" />
+            <img src="/assets/pub_images/2015_circulation_cover.jpg" alt="Heart research visualization" style="width: 100%; height: auto; object-fit: contain;">
         </div>
         <div class="pub-content">
             <div class="pub-title">
@@ -514,45 +462,3 @@
         });
     });
 </script>
-
-
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="social-icons">
-                <a href="mailto:Fengyuanqing2010@gmail.com" class="icon" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=nWYWiVUAAAAJ" class="icon" title="Google Scholar">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="https://github.com/fengyq" class="icon" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://twitter.com/FengYuanqing" class="icon" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://clustrmaps.com/site/1c3yz" class="icon" title="Visitor Map">
-                    <i class="fas fa-globe"></i>
-                </a>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Yuanqing Feng (冯园庆). All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Add scroll effect to header
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.site-header');
-            if (window.scrollY > 10) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
-</body>
-</html>

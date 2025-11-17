@@ -11,8 +11,8 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Home" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
-<meta property="og:description" content="Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
+<meta name="description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
+<meta property="og:description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
 <link rel="canonical" href="http://localhost:4001/" />
 <meta property="og:url" content="http://localhost:4001/" />
 <meta property="og:site_name" content="Yuanqing Feng (冯园庆)" />
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"Home","name":"Yuanqing Feng (冯园庆)","url":"http://localhost:4001/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"Home","name":"Yuanqing Feng (冯园庆)","url":"http://localhost:4001/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -28,6 +28,7 @@
     <header class="site-header">
         <div class="header-container">
             <nav class="main-nav">
+                
                 
                 <a href="/" class="active">Home</a>
                 
@@ -44,6 +45,12 @@
                 <a href="/contact/" >Contact</a>
                 
             </nav>
+            <div class="lang-toggle">
+                
+                    
+                    <a href="/cn/" class="lang-btn">Chinese</a>
+                
+            </div>
         </div>
     </header>
 
@@ -314,41 +321,6 @@
         box-shadow: var(--shadow-medium);
         color: white;
     }
-    
-    /* Language switch */
-    .language-switch {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        display: flex;
-        gap: 0.5rem;
-    }
-    
-    .lang-btn {
-        padding: 0.5rem 1rem;
-        border: 2px solid var(--border-color);
-        background: white;
-        color: var(--text-color);
-        text-decoration: none;
-        border-radius: 9999px;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
-    }
-    
-    .lang-btn:hover,
-    .lang-btn.active {
-        background: var(--gradient-secondary);
-        color: white;
-        border-color: transparent;
-        transform: translateY(-2px);
-        box-shadow: var(--shadow-light);
-    }
-    
-    .lang-btn::after {
-        display: none;
-    }
-    
     /* Responsive design */
     @media (max-width: 768px) {
         .hero-section {
@@ -393,12 +365,6 @@
         
         .ticker-item {
             white-space: normal;
-        }
-        
-        .language-switch {
-            position: static;
-            justify-content: center;
-            margin: 1rem 0;
         }
     }
     
@@ -447,7 +413,7 @@
             
             <a class="ticker-item" href="/news/">
                 <span class="ticker-date">AUG 2023</span>
-                <span class="ticker-title">New Position at UPenn</span>
+                <span class="ticker-title">New Position at CPU</span>
             </a>
             
             <a class="ticker-item" href="/news/">
@@ -468,7 +434,7 @@
             
             <a class="ticker-item" href="/news/">
                 <span class="ticker-date">AUG 2023</span>
-                <span class="ticker-title">New Position at UPenn</span>
+                <span class="ticker-title">New Position at CPU</span>
             </a>
             
             <a class="ticker-item" href="/news/">
@@ -481,11 +447,7 @@
     <a class="ticker-link" href="/news/">View all →</a>
 </div>
 
-<!-- Language Switch -->
-<div class="language-switch">
-    <a href="/" class="lang-btn active">English</a>
-    <a href="/cn/" class="lang-btn">中文</a>
-</div>
+<!-- Language switch handled globally in header -->
 
     </main>
 

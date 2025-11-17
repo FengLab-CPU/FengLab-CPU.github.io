@@ -1,31 +1,31 @@
 ---
 layout: default
-title: News
-permalink: /news/
+title: 新闻
+permalink: /cn/news/
 news_items:
-  - date: "FEB 2024"
-    title: "Nature Genetics Publication"
-    excerpt: 'Our paper "Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans" was published in Nature Genetics.'
+  - date: "2024年2月"
+    title: "Nature Genetics 论文发表"
+    excerpt: '我们的论文 “Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans” 发表在《Nature Genetics》上。'
     link: "https://pubmed.ncbi.nlm.nih.gov/38200130/"
     pmid: "38200130"
     category: "publication"
-  - date: "NOV 2023"
-    title: "Next Generation Scientist Award"
-    excerpt: "Received the Next Generation Scientist Award from Chan Zuckerberg Initiative."
+  - date: "2023年11月"
+    title: "Next Generation Scientist 奖项"
+    excerpt: "获得 Chan Zuckerberg Initiative 授予的 Next Generation Scientist Award。"
     category: "award"
-  - date: "AUG 2023"
-    title: "New Position at CPU"
-    excerpt: "Started as Research Associate at China Pharmaceutical University."
+  - date: "2023年8月"
+    title: "加入宾大新职位"
+    excerpt: "在宾夕法尼亚大学担任研究助理（Research Associate）。"
     category: "position"
-  - date: "MAR 2023"
-    title: "Cell Publication"
-    excerpt: 'Our paper "Whole-genome sequencing reveals a complex African population demographic history" was published in Cell.'
+  - date: "2023年3月"
+    title: "Cell 论文发表"
+    excerpt: '我们的论文 “Whole-genome sequencing reveals a complex African population demographic history” 发表在《Cell》上。'
     link: "https://pubmed.ncbi.nlm.nih.gov/36868214/"
     pmid: "36868214"
     category: "publication"
-  - date: "OCT 2022"
-    title: "ASHG 2022 Presentation"
-    excerpt: "Presented our research on African genomics at the ASHG 2022 Annual Meeting."
+  - date: "2022年10月"
+    title: "ASHG 2022 报告"
+    excerpt: "在 ASHG 2022 年会报告非洲人群基因组学相关研究。"
     category: "presentation"
 ---
 
@@ -69,10 +69,6 @@ news_items:
         color: var(--heading-color);
     }
 
-    .news-section {
-        margin: 2rem 0;
-    }
-
     .news-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -111,8 +107,6 @@ news_items:
         font-size: 0.9rem;
         color: var(--accent-color);
         font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
         margin-bottom: 0.5rem;
     }
 
@@ -125,8 +119,7 @@ news_items:
         font-size: 0.75rem;
         font-weight: 500;
         text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.75rem;
     }
 
     .news-category.publication {
@@ -201,23 +194,10 @@ news_items:
         box-shadow: 0 4px 16px rgba(44, 95, 45, 0.3);
     }
 
-    /* Responsive Design */
     @media (max-width: 768px) {
         .news-grid {
             grid-template-columns: 1fr;
             gap: 1.5rem;
-        }
-        
-        .news-title {
-            font-size: 2rem;
-        }
-        
-        .news-header {
-            padding: 1.5rem;
-        }
-        
-        .news-item {
-            padding: 1.2rem;
         }
     }
 
@@ -225,50 +205,17 @@ news_items:
         .news-container {
             padding: 1rem 0.5rem;
         }
-        
-        .news-header {
-            padding: 1rem;
-        }
-        
-        .news-title {
-            font-size: 1.8rem;
-        }
-        
-        .news-grid {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-        
-        .news-item {
-            padding: 1rem;
-        }
-        
-        .news-item-title {
-            font-size: 1.1rem;
-        }
-    }
-
-    /* Animation for scroll reveal */
-    .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease;
-    }
-
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
     }
 </style>
 
 <div class="news-container">
-    <div class="news-header fade-in">
-        <h1 class="news-title">News and Updates</h1>
+    <div class="news-header">
+        <h1 class="news-title">新闻与动态</h1>
     </div>
     <div class="news-section">
         <div class="news-grid">
             {% for item in page.news_items %}
-            <div class="news-item fade-in">
+            <div class="news-item">
                 <div class="news-date">{{ item.date }}</div>
                 {% if item.category %}
                 <span class="news-category {{ item.category }}">{{ item.category }}</span>
@@ -283,29 +230,13 @@ news_items:
             </div>
             {% endfor %}
         </div>
-        
+
         <div style="text-align: center; margin-top: 3rem;">
-            <a href="/" class="back-link">
+            <a href="/cn/" class="back-link">
                 <i class="fas fa-home"></i>
-                Back to Homepage
+                返回主页
             </a>
         </div>
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, index * 100);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        fadeElements.forEach(el => observer.observe(el));
-    });
-</script>

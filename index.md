@@ -269,41 +269,6 @@ title: Home
         box-shadow: var(--shadow-medium);
         color: white;
     }
-    
-    /* Language switch */
-    .language-switch {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        display: flex;
-        gap: 0.5rem;
-    }
-    
-    .lang-btn {
-        padding: 0.5rem 1rem;
-        border: 2px solid var(--border-color);
-        background: white;
-        color: var(--text-color);
-        text-decoration: none;
-        border-radius: 9999px;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: all 0.3s ease;
-    }
-    
-    .lang-btn:hover,
-    .lang-btn.active {
-        background: var(--gradient-secondary);
-        color: white;
-        border-color: transparent;
-        transform: translateY(-2px);
-        box-shadow: var(--shadow-light);
-    }
-    
-    .lang-btn::after {
-        display: none;
-    }
-    
     /* Responsive design */
     @media (max-width: 768px) {
         .hero-section {
@@ -348,12 +313,6 @@ title: Home
         
         .ticker-item {
             white-space: normal;
-        }
-        
-        .language-switch {
-            position: static;
-            justify-content: center;
-            margin: 1rem 0;
         }
     }
     
@@ -408,8 +367,4 @@ title: Home
 </div>
 {% endif %}
 
-<!-- Language Switch -->
-<div class="language-switch">
-    <a href="/" class="lang-btn active">English</a>
-    <a href="/cn/" class="lang-btn">中文</a>
-</div>
+<!-- Language switch handled globally in header -->

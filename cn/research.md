@@ -1,0 +1,306 @@
+---
+layout: default
+title: 研究
+permalink: /cn/research/
+---
+
+<style>
+    :root {
+        --primary-color: #2C5F2D;
+        --secondary-color: #1E2761;
+        --accent-color: #735DA5;
+        --gradient-primary: linear-gradient(135deg, #2C5F2D 0%, #31473A 100%);
+        --gradient-secondary: linear-gradient(135deg, #1E2761 0%, #2C3E6E 100%);
+        --gradient-accent: linear-gradient(135deg, #735DA5 0%, #8B7CB5 100%);
+        --text-dark: #2D3748;
+        --text-light: #4A5568;
+        --bg-light: #F7FAFC;
+        --border-color: #E2E8F0;
+    }
+
+    .research-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+        box-sizing: border-box;
+    }
+
+    .research-header {
+        background: white;
+        border-radius: 16px;
+        padding: 0.75rem 2.5rem 2.5rem 2.5rem;
+        margin-bottom: 0.3rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid #e2e8f0;
+    }
+
+    .research-header h1 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 0.45rem;
+        margin-top: 0.75rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .research-header h1::after {
+        content: '';
+        display: block;
+        width: clamp(120px, 30vw, 360px);
+        height: 4px;
+        background: var(--gradient-primary);
+        border-radius: 2px;
+        margin: 0.6rem auto 0;
+    }
+
+    .research-intro-layout {
+        max-width: 1100px;
+        margin: 2rem auto 2.5rem;
+    }
+
+    .research-intro-text {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: var(--text-dark);
+        margin-bottom: 3rem;
+        padding: 2rem;
+        background: var(--bg-light);
+        border-radius: 12px;
+        border-left: 4px solid var(--primary-color);
+    }
+
+    .research-intro-image {
+        float: right;
+        width: 28%;
+        max-width: 360px;
+        height: auto;
+        max-height: 320px;
+        object-fit: contain;
+        margin: 0.25rem 0 0.5rem 1.25rem;
+        border: none;
+        border-radius: 2;
+        background: none;
+    }
+
+    .research-section {
+        margin-top: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        color: var(--secondary-color);
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .research-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .research-card {
+        background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+        border-radius: 20px;
+        padding: 2.25rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+        border: 1px solid #e6edf5;
+        transition: box-shadow 0.3s ease, transform 0.2s ease;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+    }
+
+    .research-card:hover {
+        box-shadow: 0 16px 40px rgba(17, 24, 39, 0.12);
+        transform: translateY(-2px);
+    }
+
+    .card-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+        gap: clamp(0.75rem, 2vw, 1.5rem);
+        flex-wrap: nowrap;
+    }
+
+    .card-content {
+        flex: 1;
+        text-align: left;
+        padding-left: 2rem;
+        line-height: 1.7;
+        box-sizing: border-box;
+    }
+
+    .card-figure {
+        flex: 0 0 20%;
+        max-width: 20%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .card-figure img {
+        width: 70%;
+        max-width: 70%;
+        height: auto;
+        min-height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 6px 18px rgba(17, 24, 39, 0.08);
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        color: #1e3a8a;
+        background: #dbeafe;
+        padding: 0.5rem 1rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto 1.25rem;
+        box-shadow: 0 2px 4px rgba(30, 64, 175, 0.15);
+        word-break: break-word;
+    }
+
+    .card-lead {
+        font-size: 1.02rem;
+        line-height: 1.8;
+        color: #374151;
+        margin: 0 0 1.25rem 0;
+        text-align: left;
+    }
+
+    .card-list {
+        list-style: none;
+        padding-left: 0;
+        margin: 1.25rem 0 0 0;
+        text-align: left;
+    }
+
+    .card-list li {
+        position: relative;
+        padding-left: 1.75rem;
+        margin-bottom: 1rem;
+        line-height: 1.7;
+        color: #374151;
+        font-size: 1rem;
+    }
+
+    .card-list li::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .research-container {
+            padding: 1rem 1rem;
+        }
+
+        .research-header h1 {
+            font-size: 2rem;
+        }
+
+        .card-header {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1.25rem;
+        }
+
+        .card-content {
+            padding-left: 0;
+        }
+
+        .card-figure {
+            flex: none;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+    }
+</style>
+
+<div class="research-container">
+    <div class="research-header">
+        <h1>研究方向简介</h1>
+        <div class="research-intro-layout">
+            <div class="research-intro-text">
+                <img src="/assets/images/background.png" alt="基因组功能研究示意图" class="research-intro-image">
+                <p>我们的研究聚焦于深入理解基因组功能，致力于阐明遗传突变如何影响人类的表型多样性、多种疾病风险以及进化适应过程。遗传突变是人类生物多样性的基础，然而，当前通过全基因组关联分析（GWAS）和群体基因组学鉴定出的大多数与性状和疾病相关的突变，尤其是广泛分布于非编码调控区的突变，仍缺乏系统的功能注释。</p>
+                <p>许多突变源于人类对历史环境的适应性选择，在塑造表型多样性方面曾发挥关键作用，但在现代环境中却可能增加复杂疾病的易感性。因此，系统性地解析这些突变的分子功能，并建立其与表型和疾病之间的精确因果联系，是当前精准医学领域面临的重大挑战。</p>
+                <p>为攻克这一难题，我们整合高通量功能基因组学平台，包括大规模并行报告基因实验（MPRA）、深度突变扫描（DMS）、基于CRISPR的扰动筛选、单细胞组学与长读长测序，并结合群体遗传学和计算分析。通过这一多维度、高通量的研究框架，我们希望系统鉴定功能性突变及其靶基因，深入解析影响人类性状和疾病风险的分子机制，为疾病的精准预防和治疗提供新策略。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="research-section">
+        <h2 class="section-title">当前研究方向</h2>
+
+        <div class="research-card">
+            <h3 class="card-title">功能基因组学与技术开发</h3>
+            <div class="card-header">
+                <div class="card-content">
+                    <p class="card-lead">
+                    我们开发并应用高通量功能基因组学方法，系统研究基因调控机制和遗传突变的功能。
+                    </p>
+                <ul class="card-list">
+                    <li>利用 MPRA、Hi-C 等技术，绘制基因调控元件及其作用靶点的图谱。</li>
+                    <li>构建高通量CRISPR编辑平台，并在疾病相关模型中开展功能筛选。</li>
+                    <li>结合单细胞组学和计算分析，深入解析细胞异质性及其复杂的调控网络。</li>
+                </ul>
+                </div>
+                <div class="card-figure">
+                    <img src="/assets/images/biotech.jpg" alt="功能基因组学技术示意图">
+                </div>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <h3 class="card-title">复杂性状与疾病的遗传学</h3>
+            <div class="card-header">
+                <div class="card-content">
+                <p class="card-lead">
+                    我们结合功能基因组学与统计遗传学方法，解析人类复杂疾病和性状的遗传基础。
+                </p>
+                <ul class="card-list">
+                    <li>利用功能基因组学实验，建立疾病相关突变与其调控功能之间的直接联系。</li>
+                    <li>整合转录组、表观组等多组学数据，构建从突变到分子表型的多层次关联网络。</li>
+                    <li>利用细胞和动物模型，深入研究关键突变和基因的致病机制，发现潜在治疗靶点。</li>
+                </ul>
+                </div>
+                <div class="card-figure">
+                    <img src="/assets/images/gwas.jpg" alt="复杂疾病遗传学示意图">
+                </div>
+            </div>
+        </div>
+
+        <div class="research-card">
+            <h3 class="card-title">适应性进化与群体遗传学</h3>
+            <div class="card-header">
+                <div class="card-content">
+                <p class="card-lead">
+                    结合群体遗传学和功能研究，探究人类对多样环境的适应性进化过程，以及这些适应性突变如何影响现代人群的健康状况。
+                </p>
+                <ul class="card-list">
+                    <li>鉴定受到自然选择作用的突变和关键基因。</li>
+                    <li>研究人群中适应性突变的功能后果及其对表型的影响。</li>
+                    <li>探索历史进化压力如何影响不同人群的疾病风险。</li>
+                </ul>
+                </div>
+                <div class="card-figure">
+                    <img src="/assets/images/evo.png" alt="人类进化与适应性遗传学示意图">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,7 +2,7 @@
 
 Static academic website for Yuanqing Feng’s lab, built with Jekyll and deployed via GitHub Pages.
 
-Live site: <https://fengyq.github.io>
+Live site: <fenglab-cpu.github.io>
 
 ---
 
@@ -21,8 +21,8 @@ Prerequisites: Ruby, Bundler, Git.
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/fengyq/fengyq.github.io.git
-   cd fengyq.github.io
+   git clone https://github.com/fenglab-cpu/fenglab-cpu.github.io/.git
+   cd fenglab-cpu.github.io
    ```
 2. **Install dependencies**
    ```bash

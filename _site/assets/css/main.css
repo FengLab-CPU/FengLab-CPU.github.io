@@ -84,6 +84,7 @@ h2 {
 
 h3 {
     color: var(--heading-accent);
+    font-size: 2.5rem;
 }
 
 h4 {
@@ -211,6 +212,35 @@ a:hover::after {
 .main-nav a.active:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
+}
+
+/* Global language toggle */
+.lang-toggle {
+    margin-left: auto;
+}
+
+.lang-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-color);
+    background: #ffffff;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: var(--gradient-secondary);
+    color: #ffffff;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-light);
+}
+
+.lang-btn::after {
+    display: none;
 }
 
 /* Content styles */

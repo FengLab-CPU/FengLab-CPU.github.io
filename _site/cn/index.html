@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主页 - Yuanqing Feng (冯园庆)</title>
+    <title>首页 - Yuanqing Feng (冯园庆)</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>主页 | Yuanqing Feng (冯园庆)</title>
+<title>首页 | Yuanqing Feng (冯园庆)</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="主页" />
+<meta property="og:title" content="首页" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
-<meta property="og:description" content="Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
+<meta name="description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
+<meta property="og:description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
 <link rel="canonical" href="http://localhost:4001/cn/" />
 <meta property="og:url" content="http://localhost:4001/cn/" />
 <meta property="og:site_name" content="Yuanqing Feng (冯园庆)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="主页" />
+<meta property="twitter:title" content="首页" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"主页","url":"http://localhost:4001/cn/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"首页","url":"http://localhost:4001/cn/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -29,99 +29,425 @@
         <div class="header-container">
             <nav class="main-nav">
                 
-                <a href="/" >Home</a>
                 
-                <a href="/research/" >Research</a>
+                <a href="/cn/" class="active">主页</a>
                 
-                <a href="/publications/" >Publications</a>
+                <a href="/cn/research/" >研究</a>
                 
-                <a href="/people/" >People</a>
+                <a href="/cn/publications/" >发表论文</a>
                 
-                <a href="/news/" >News</a>
+                <a href="/cn/people/" >团队成员</a>
                 
-                <a href="/jobs/" >Jobs</a>
+                <a href="/cn/news/" >新闻</a>
                 
-                <a href="/contact/" >Contact</a>
+                <a href="/cn/jobs/" >招聘</a>
+                
+                <a href="/cn/contact/" >联系方式</a>
                 
             </nav>
+            <div class="lang-toggle">
+                
+                    
+                    <a href="/" class="lang-btn">English</a>
+                
+            </div>
         </div>
     </header>
 
     <main class="content">
         <style>
-    /* Responsive adjustments */
-    .profile-section {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 2rem;
-        text-align: left;
-    }
-    .profile-text {
-        flex: 2;
-    }
-    .profile-image {
-        flex: 1;
-    }
-    .profile-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-
-    /* Font size adjustments */
-    h1 span {
-        font-size: 1.5rem;
-    }
-    h2, h3, h4, h5, h6 {
-        font-size: 1.2rem;
-    }
-
-    /* Content container */
-    .content-wrapper {
+    .hero-section {
+        text-align: center;
+        padding: 2.8rem 1.5rem 3.5rem;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        border-radius: 24px;
+        max-width: 1200px;
+        margin: 1.25rem auto 2rem;
         position: relative;
-        padding-top: 1rem;    
+        overflow: hidden;
+        box-shadow: 0 24px 70px rgba(23, 37, 84, 0.1);
+        min-height: clamp(420px, 63vh, 644px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.4rem;
+        box-sizing: border-box;
+    }
+    
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: var(--gradient-secondary);
+        border-radius: 3px 3px 0 0;
+        z-index: 2;
+    }
+    
+    .hero-section::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('/assets/images/background2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 45%;
+        opacity: 0.3;
+        filter: brightness(0.95);
+        z-index: 0;
+        transform: none;
+    }
+    
+    .hero-section > * {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .hero-title {
+        font-size: clamp(3rem, 4vw, 4.25rem);
+        font-weight: 700;
+        margin-bottom: 1.05rem;
+        background: var(--gradient-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin-top: -0.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+        color: var(--text-dark);
+        margin-bottom: 2.1rem;
+        font-weight: 600;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+    }
 
-    /* Responsive layout for mobile */
+    .hero-tags {
+        width: 100%;
+        max-width: 800px;
+        margin: 1.5rem auto 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .hero-tag {
+        display: inline-block;
+        padding: 0.35rem 0.9rem;
+        border-radius: 9999px;
+        border: 1px solid rgba(148, 163, 184, 0.9);
+        background: transparent;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: #111827;
+        text-transform: none;
+    }
+    
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.875rem 2rem;
+        border: none;
+        border-radius: 9999px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1;
+        position: relative;
+        overflow: hidden;
+        min-width: 140px;
+    }
+    
+    .btn-primary {
+        background: var(--gradient-primary);
+        color: white;
+        box-shadow: var(--shadow-light);
+    }
+    
+    .btn-primary:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: var(--shadow-medium);
+        color: white;
+    }
+    
+    .hero-ticker {
+        width: min(720px, 90vw);
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 24px;
+        padding: 0.72rem 1.3rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        border: 1px solid rgba(134, 151, 214, 0.4);
+        box-shadow: 0 20px 45px rgba(30, 41, 59, 0.15);
+        backdrop-filter: blur(14px);
+        margin: 1.5rem auto 0;
+        min-height: 51px;
+    }
+    
+    .ticker-label {
+        font-weight: 700;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #2f3f7f;
+    }
+    
+    .ticker-track {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        height: 2.56rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .ticker-track::before,
+    .ticker-track::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 18px;
+        pointer-events: none;
+        z-index: 2;
+    }
+    
+    .ticker-track::before {
+        top: 0;
+        background: linear-gradient(180deg, rgba(248, 250, 255, 0.85), transparent);
+    }
+    
+    .ticker-track::after {
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(248, 250, 255, 0.85), transparent);
+    }
+    
+    .ticker-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        animation: tickerScrollY 20s linear infinite;
+        animation-play-state: running;
+    }
+
+    .hero-ticker:hover .ticker-inner {
+        animation-play-state: paused;
+    }
+    
+    .ticker-item {
+        white-space: nowrap;
+        font-weight: 600;
+        color: #1f2a44;
+        font-size: 0.98rem;
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        min-height: 1.92rem;
+        padding: 0.2rem 0;
+        text-decoration: none;
+    }
+    
+    .ticker-date {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #5a6bb0;
+        letter-spacing: 0.05em;
+    }
+    
+    .ticker-title {
+        color: #1f2a44;
+    }
+    
+    .ticker-item:hover .ticker-title {
+        color: #243b80;
+        text-decoration: underline;
+    }
+    
+    .ticker-link {
+        font-weight: 600;
+        color: #4c6ef5;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    
+    .ticker-link:hover {
+        text-decoration: underline;
+    }
+    
+    @keyframes tickerScrollY {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); }
+    }
+    
+    .btn-secondary {
+        background: var(--gradient-secondary);
+        color: white;
+        box-shadow: var(--shadow-light);
+    }
+    
+    .btn-secondary:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: var(--shadow-medium);
+        color: white;
+    }
+    
+    .btn-accent {
+        background: var(--gradient-accent);
+        color: white;
+        box-shadow: var(--shadow-light);
+    }
+    
+    .btn-accent:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: var(--shadow-medium);
+        color: white;
+    }
+    /* Responsive design */
     @media (max-width: 768px) {
-        .profile-section {
-            flex-direction: column;
+        .hero-section {
+            padding: 2rem 1rem 2.5rem;
+            margin: 1rem auto 1.25rem;
+            min-height: auto;
         }
-        .profile-image {
-            order: -1;
+        
+        .hero-title {
+            font-size: 2.6rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .hero-tags {
+            margin: 1.2rem auto 1.5rem;
+            padding: 0 1rem;
+        }
+        
+        .hero-ticker {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.75rem;
+            border-radius: 24px;
+            width: 100%;
+        }
+        
+        .ticker-track,
+        .ticker-inner {
+            flex-direction: column;
+            gap: 0.75rem;
+            animation: none;
+        }
+        
+        .ticker-track::before,
+        .ticker-track::after {
+            display: none;
+        }
+        
+        .ticker-item {
+            white-space: normal;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        .hero-ticker {
+            padding: 1rem;
         }
     }
 </style>
 
-<div class="content-wrapper">
-    <div class="lang-switch">
-        <a href="/">English</a>
-    </div>
-
-    <h1><span style="color: #2c3e50; font-size: 1.5rem;">冯园庆</span></h1>
-
-    <div class="profile-section">
-        <div class="profile-text">
-            我是<a href="https://www.med.upenn.edu/tishkoff/" target="_blank">宾夕法尼亚大学</a>的<span style="color: #2c3e50; font-weight: 600;">研究助理</span>。我的研究主要关注<span style="color: #2c3e50; font-weight: 600;">人类进化、表型多样性和疾病易感性的遗传机制</span>，特别是<span style="color: #2c3e50; font-weight: 600;">非编码变异</span>在人类性状和疾病中的作用。
-
-            我在<span style="color: #2c3e50; font-weight: 600;">群体遗传学、功能基因组学和生物信息学</span>方面具有专业知识，开发了整合性方法，利用前沿技术包括<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-02856-6" target="_blank">MPRA</a>、<a href="https://www.nature.com/articles/s41576-023-00583-z" target="_blank">Hi-C</a>和<a href="https://www.synthego.com/learn/crispr" target="_blank">CRISPR基因编辑</a>来高效识别功能性突变及其靶基因，为理解人类复杂性状的分子机制提供新见解。
-
-            在加入宾大之前，我分别于2017年和2011年获得<a href="https://www.pku.edu.cn/" target="_blank">北京大学</a>分子医学博士学位和<a href="https://www.jlu.edu.cn/" target="_blank">吉林大学</a>生物学学士学位。
-
-            <div style="margin-top: 1.5rem;">
-            <span style="color: #2c3e50; font-weight: 600;">研究亮点：</span>
-            <ul style="list-style-type: none; padding-left: 0; margin-top: 0.5rem;">
-                <li style="margin-bottom: 0.5rem;">• 阐明TRIM72在心脏能量代谢中的作用 (<a href="https://pubmed.ncbi.nlm.nih.gov/33744959/" target="_blank">MBE</a>)</li>
-                <li style="margin-bottom: 0.5rem;">• 鉴定影响皮肤色素沉着的遗传变异和基因 (<a href="https://pubmed.ncbi.nlm.nih.gov/38200130/" target="_blank">Nature Genetics</a>)</li>
-                <li style="margin-bottom: 0.5rem;">• 理解非洲人群的局部适应性进化 (<a href="https://pubmed.ncbi.nlm.nih.gov/36868214/" target="_blank">Cell</a>)</li>
-            </ul>
-            </div>
-        </div>
-        <div class="profile-image">
-            <img src="../assets/images/photo1.jpg" alt="冯园庆" />
-        </div>
+<div class="hero-section">
+    <h1 class="hero-title">中国药科大学功能基因组学实验室</h1>
+    <p class="hero-subtitle">我们的研究致力于系统性地探索遗传变异如何塑造人类生物学，研究范围从最基础的分子机制，延伸至人类疾病的发生发展，乃至物种演化的宏大历程。</p>
+    <div class="hero-tags">
+        <span class="hero-tag">遗传突变功功能解析</span>
+        <span class="hero-tag">疾病发生与人类进化</span>
+        <span class="hero-tag">高通量基因组学技术</span>
     </div>
 </div>
+
+<!-- News Ticker moved below hero -->
+
+<div class="hero-ticker">
+    <span class="ticker-label">最新动态</span>
+    <div class="ticker-track">
+        <div class="ticker-inner">
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">FEB 2024</span>
+                <span class="ticker-title">Nature Genetics Publication</span>
+            </a>
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">NOV 2023</span>
+                <span class="ticker-title">Next Generation Scientist Award</span>
+            </a>
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">AUG 2023</span>
+                <span class="ticker-title">New Position at CPU</span>
+            </a>
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">MAR 2023</span>
+                <span class="ticker-title">Cell Publication</span>
+            </a>
+            
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">FEB 2024</span>
+                <span class="ticker-title">Nature Genetics Publication</span>
+            </a>
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">NOV 2023</span>
+                <span class="ticker-title">Next Generation Scientist Award</span>
+            </a>
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">AUG 2023</span>
+                <span class="ticker-title">New Position at CPU</span>
+            </a>
+            
+            <a class="ticker-item" href="/news/">
+                <span class="ticker-date">MAR 2023</span>
+                <span class="ticker-title">Cell Publication</span>
+            </a>
+            
+        </div>
+    </div>
+    <a class="ticker-link" href="/news/">查看全部 →</a>
+</div>
+
+<!-- Language switch handled globally in header -->
 
     </main>
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Jobs
-permalink: /jobs/
+title: 招聘
+permalink: /cn/jobs/
 ---
 
 <style>
@@ -19,7 +19,7 @@ permalink: /jobs/
 
     .jobs-container {
         margin: 0 auto;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 2rem;
         max-width: 1200px;
         box-sizing: border-box;
     }
@@ -37,23 +37,23 @@ permalink: /jobs/
 
     .jobs-title {
         font-size: 2.5rem;
-        margin-top: 0.2rem;
-        margin-bottom: 2rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.8rem;
         font-weight: 700;
         color: var(--heading-color);
     }
 
     .jobs-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         opacity: 0.9;
-        max-width: 600px;
+        max-width: 650px;
         margin: 0 auto;
         line-height: 1.6;
         color: var(--text-light);
     }
 
     .jobs-section {
-        margin: 2 rem 0;
+        margin: 2rem 0;
     }
 
     .jobs-grid {
@@ -222,35 +222,10 @@ permalink: /jobs/
         margin: 0 auto;
     }
 
-    /* Animation for scroll reveal */
-    .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease;
-    }
-
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    /* Responsive Design */
     @media (max-width: 768px) {
         .jobs-grid {
             grid-template-columns: 1fr;
             gap: 1.5rem;
-        }
-        
-        .jobs-title {
-            font-size: 2rem;
-        }
-        
-        .jobs-header {
-            padding: 1rem;
-        }
-        
-        .job-card {
-            padding: 1rem;
         }
     }
 
@@ -258,89 +233,70 @@ permalink: /jobs/
         .jobs-container {
             padding: 1rem 0.75rem;
         }
-        
-        .jobs-header {
-            padding: 1rem;
-        }
-        
-        .jobs-title {
-            font-size: 1.8rem;
-        }
     }
 </style>
 
 <div class="jobs-container">
-    <div class="jobs-header fade-in">
-        <h1 class="jobs-title">Join Our Team</h1>
-        <p class="jobs-subtitle">We welcome motivated individuals to join our research group. </p>
-        <p> Contact <a href="mailto:fengyuanqing2010@gmail.com" class="contact-email">fengyuanqing2010@gmail.com</a></p>
+    <div class="jobs-header">
+        <h1 class="jobs-title">加入我们的团队</h1>
+        <p class="jobs-subtitle">
+            我们欢迎对功能基因组学和人类遗传学感兴趣的同学和研究人员加入。我们也欢迎其他交叉背景的优秀人才加入或者合作，共同探索新方向。
+        </p>
     </div>
-    
+
     <div class="jobs-section">
         <div class="jobs-grid">
-            
-            <div class="job-card fade-in">
-                <h3 class="job-title">Postdoctoral Researcher</h3>
-                <span class="job-type">Full-time</span>
+            <div class="job-card">
+                <h3 class="job-title">博士后研究员</h3>
+                <span class="job-type">全职 / Postdoc</span>
                 <p class="job-description">
-                    We are seeking highly motivated postdoctoral researchers to join our functional genomics research program. The successful candidate will work on projects involving high-throughput screening, CRISPR technologies, and single-cell genomics.
+                    我们在招聘对功能基因组学和人类遗传学感兴趣的博士后。您将参与到功能基因组学技术开发项目中。
                 </p>
-                
+
                 <div class="job-requirements">
-                    <h4>Requirements:</h4>
+                    <h4>岗位要求：</h4>
                     <ul>
-                        <li>Ph.D. in Genetics, Biology, or related field</li>
-                        <li>Experience with functional genomics assays (e.g. CRISPR)</li>
-                        <li>Strong computational skills is a plus (Python/R)</li>
-                        <li>Track record of high-quality publications</li>
-                        <li>Excellent communication and collaboration skills</li>
+                        <li>教育背景：拥有遗传学、分子生物学、生物信息学或相关领域的博士学位。</li>
+                        <li>科研经验：具备功能基因组学实验经验（如MPRA、CRISPR筛选等）者优先考虑。</li>
+                        <li>技术能力：具备良好的编程和数据分析能力（如Python/R等）。</li>
+                        <li>学术成果：有高质量学术论文发表记录。</li>
+                        <li>综合素质：具备良好的沟通能力和团队协作精神。</li>
                     </ul>
                 </div>
-                
             </div>
-            
-            <div class="job-card fade-in">
-                <h3 class="job-title">Graduate Student Rotation</h3>
-                <span class="job-type">Rotation</span>
+
+            <div class="job-card">
+                <h3 class="job-title">研究生轮转 / 博士生</h3>
+                <span class="job-type">轮转 / 全职学生</span>
                 <p class="job-description">
-                    Graduate students interested in functional genomics, computational biology, or human genetics are welcome to rotate in our lab. We offer exciting projects at the intersection of experimental and computational biology.
+                    欢迎对功能基因组学或人类遗传学感兴趣的研究生加入本课题组，开展实验和计算结合的交叉研究。
                 </p>
-                
+
                 <div class="job-requirements">
-                    <h4>Requirements:</h4>
+                    <h4>岗位要求：</h4>
                     <ul>
-                        <li>Current enrollment in a relevant graduate program</li>
-                        <li>Strong interest in genomics and molecular biology</li>
-                        <li>Basic programming skills preferred</li>
-                        <li>Enthusiasm for interdisciplinary research</li>
+                        <li>目前在相关专业研究生项目在读或即将入学</li>
+                        <li>对基因组学和人类疾病研究有浓厚兴趣</li>
+                        <li>具有一定编程或数据分析基础者优先</li>
+                        <li>具有主动学习和独立科研能力</li>
                     </ul>
                 </div>
-            </div>         
+            </div>
         </div>
-        
+
+        <div class="no-positions" style="margin-top: 2rem;">
+            <h3>其他机会</h3>
+            <p>
+                如果希望加入我们或开展合作，请发送邮件并附上简历与研究兴趣简介。
+            </p>
+            <p><a href="mailto:fengyuanqing2010@gmail.com" class="contact-email">fengyuanqing2010@gmail.com</a></p>
+        </div>
+
         <div style="text-align: center; margin-top: 3rem;">
-            <a href="/" class="back-link">
+            <a href="/cn/" class="back-link">
                 <i class="fas fa-home"></i>
-                Back to Homepage
+                返回主页
             </a>
         </div>
     </div>
 </div>
-
-<script>
-    // Intersection Observer for fade-in animations
-    document.addEventListener('DOMContentLoaded', function() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, index * 100);
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        const fadeElements = document.querySelectorAll('.fade-in');
-        fadeElements.forEach(el => observer.observe(el));
-    });
-</script>

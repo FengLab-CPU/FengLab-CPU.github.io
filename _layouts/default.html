@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{% if page.url contains '_cn' %}zh{% else %}en{% endif %}">
+<html lang="{% if page.url contains '_cn' or page.url contains '/cn/' %}zh{% else %}en{% endif %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,28 @@
     <header class="site-header">
         <div class="header-container">
             <nav class="main-nav">
-                {% for item in site.navigation %}
+                {% if page.url contains '/cn/' and site.navigation_cn %}
+                    {% assign nav_items = site.navigation_cn %}
+                {% else %}
+                    {% assign nav_items = site.navigation %}
+                {% endif %}
+                {% for item in nav_items %}
                 <a href="{{ site.baseurl }}{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>
                 {% endfor %}
             </nav>
+            <div class="lang-toggle">
+                {% if page.url contains '/cn/' %}
+                    {% assign english_url = page.url | replace_first: '/cn', '' %}
+                    <a href="{{ site.baseurl }}{{ english_url }}" class="lang-btn">English</a>
+                {% else %}
+                    {% if page.url == '/' %}
+                        {% assign chinese_url = '/cn/' %}
+                    {% else %}
+                        {% assign chinese_url = '/cn' | append: page.url %}
+                    {% endif %}
+                    <a href="{{ site.baseurl }}{{ chinese_url }}" class="lang-btn">Chinese</a>
+                {% endif %}
+            </div>
         </div>
     </header>
 

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News - Yuanqing Feng (冯园庆)</title>
+    <title>新闻 - Yuanqing Feng (冯园庆)</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>News | Yuanqing Feng (冯园庆)</title>
+<title>新闻 | Yuanqing Feng (冯园庆)</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="News" />
+<meta property="og:title" content="新闻" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
 <meta property="og:description" content="Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
-<link rel="canonical" href="http://localhost:4001/news/" />
-<meta property="og:url" content="http://localhost:4001/news/" />
+<link rel="canonical" href="http://localhost:4001/cn/news/" />
+<meta property="og:url" content="http://localhost:4001/cn/news/" />
 <meta property="og:site_name" content="Yuanqing Feng (冯园庆)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="News" />
+<meta property="twitter:title" content="新闻" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"News","url":"http://localhost:4001/news/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Research Associate at China Pharmaceutical University, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"新闻","url":"http://localhost:4001/cn/news/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -30,25 +30,25 @@
             <nav class="main-nav">
                 
                 
-                <a href="/" >Home</a>
+                <a href="/cn/" >主页</a>
                 
-                <a href="/research/" >Research</a>
+                <a href="/cn/research/" >研究</a>
                 
-                <a href="/publications/" >Publications</a>
+                <a href="/cn/publications/" >发表论文</a>
                 
-                <a href="/people/" >People</a>
+                <a href="/cn/people/" >团队成员</a>
                 
-                <a href="/news/" class="active">News</a>
+                <a href="/cn/news/" class="active">新闻</a>
                 
-                <a href="/jobs/" >Jobs</a>
+                <a href="/cn/jobs/" >招聘</a>
                 
-                <a href="/contact/" >Contact</a>
+                <a href="/cn/contact/" >联系方式</a>
                 
             </nav>
             <div class="lang-toggle">
                 
                     
-                    <a href="/cn/news/" class="lang-btn">Chinese</a>
+                    <a href="/news/" class="lang-btn">English</a>
                 
             </div>
         </div>
@@ -95,10 +95,6 @@
         color: var(--heading-color);
     }
 
-    .news-section {
-        margin: 2rem 0;
-    }
-
     .news-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -137,8 +133,6 @@
         font-size: 0.9rem;
         color: var(--accent-color);
         font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
         margin-bottom: 0.5rem;
     }
 
@@ -151,8 +145,7 @@
         font-size: 0.75rem;
         font-weight: 500;
         text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.75rem;
     }
 
     .news-category.publication {
@@ -227,23 +220,10 @@
         box-shadow: 0 4px 16px rgba(44, 95, 45, 0.3);
     }
 
-    /* Responsive Design */
     @media (max-width: 768px) {
         .news-grid {
             grid-template-columns: 1fr;
             gap: 1.5rem;
-        }
-        
-        .news-title {
-            font-size: 2rem;
-        }
-        
-        .news-header {
-            padding: 1.5rem;
-        }
-        
-        .news-item {
-            padding: 1.2rem;
         }
     }
 
@@ -251,56 +231,23 @@
         .news-container {
             padding: 1rem 0.5rem;
         }
-        
-        .news-header {
-            padding: 1rem;
-        }
-        
-        .news-title {
-            font-size: 1.8rem;
-        }
-        
-        .news-grid {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-        
-        .news-item {
-            padding: 1rem;
-        }
-        
-        .news-item-title {
-            font-size: 1.1rem;
-        }
-    }
-
-    /* Animation for scroll reveal */
-    .fade-in {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease;
-    }
-
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
     }
 </style>
 
 <div class="news-container">
-    <div class="news-header fade-in">
-        <h1 class="news-title">News and Updates</h1>
+    <div class="news-header">
+        <h1 class="news-title">新闻与动态</h1>
     </div>
     <div class="news-section">
         <div class="news-grid">
             
-            <div class="news-item fade-in">
-                <div class="news-date">FEB 2024</div>
+            <div class="news-item">
+                <div class="news-date">2024年2月</div>
                 
                 <span class="news-category publication">publication</span>
                 
-                <div class="news-item-title">Nature Genetics Publication</div>
-                <div class="news-excerpt">Our paper "Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans" was published in Nature Genetics.</div>
+                <div class="news-item-title">Nature Genetics 论文发表</div>
+                <div class="news-excerpt">我们的论文 “Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans” 发表在《Nature Genetics》上。</div>
                 
                 <div class="news-links">
                     <a href="https://pubmed.ncbi.nlm.nih.gov/38200130/" class="pmid-link" target="_blank" rel="noopener noreferrer">PMID: 38200130</a>
@@ -308,33 +255,33 @@
                 
             </div>
             
-            <div class="news-item fade-in">
-                <div class="news-date">NOV 2023</div>
+            <div class="news-item">
+                <div class="news-date">2023年11月</div>
                 
                 <span class="news-category award">award</span>
                 
-                <div class="news-item-title">Next Generation Scientist Award</div>
-                <div class="news-excerpt">Received the Next Generation Scientist Award from Chan Zuckerberg Initiative.</div>
+                <div class="news-item-title">Next Generation Scientist 奖项</div>
+                <div class="news-excerpt">获得 Chan Zuckerberg Initiative 授予的 Next Generation Scientist Award。</div>
                 
             </div>
             
-            <div class="news-item fade-in">
-                <div class="news-date">AUG 2023</div>
+            <div class="news-item">
+                <div class="news-date">2023年8月</div>
                 
                 <span class="news-category position">position</span>
                 
-                <div class="news-item-title">New Position at CPU</div>
-                <div class="news-excerpt">Started as Research Associate at China Pharmaceutical University.</div>
+                <div class="news-item-title">加入宾大新职位</div>
+                <div class="news-excerpt">在宾夕法尼亚大学担任研究助理（Research Associate）。</div>
                 
             </div>
             
-            <div class="news-item fade-in">
-                <div class="news-date">MAR 2023</div>
+            <div class="news-item">
+                <div class="news-date">2023年3月</div>
                 
                 <span class="news-category publication">publication</span>
                 
-                <div class="news-item-title">Cell Publication</div>
-                <div class="news-excerpt">Our paper "Whole-genome sequencing reveals a complex African population demographic history" was published in Cell.</div>
+                <div class="news-item-title">Cell 论文发表</div>
+                <div class="news-excerpt">我们的论文 “Whole-genome sequencing reveals a complex African population demographic history” 发表在《Cell》上。</div>
                 
                 <div class="news-links">
                     <a href="https://pubmed.ncbi.nlm.nih.gov/36868214/" class="pmid-link" target="_blank" rel="noopener noreferrer">PMID: 36868214</a>
@@ -342,43 +289,26 @@
                 
             </div>
             
-            <div class="news-item fade-in">
-                <div class="news-date">OCT 2022</div>
+            <div class="news-item">
+                <div class="news-date">2022年10月</div>
                 
                 <span class="news-category presentation">presentation</span>
                 
-                <div class="news-item-title">ASHG 2022 Presentation</div>
-                <div class="news-excerpt">Presented our research on African genomics at the ASHG 2022 Annual Meeting.</div>
+                <div class="news-item-title">ASHG 2022 报告</div>
+                <div class="news-excerpt">在 ASHG 2022 年会报告非洲人群基因组学相关研究。</div>
                 
             </div>
             
         </div>
-        
+
         <div style="text-align: center; margin-top: 3rem;">
-            <a href="/" class="back-link">
+            <a href="/cn/" class="back-link">
                 <i class="fas fa-home"></i>
-                Back to Homepage
+                返回主页
             </a>
         </div>
     </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, index * 100);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        fadeElements.forEach(el => observer.observe(el));
-    });
-</script>
 
 
     </main>

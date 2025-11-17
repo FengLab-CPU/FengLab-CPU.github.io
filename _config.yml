@@ -1,9 +1,9 @@
 title: Yuanqing Feng (冯园庆)
 email: Fengyuanqing2010@gmail.com
 description: >- 
-  PI @ CPU.
+  Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://FengLab-CPU.github.io" # the base hostname 
+url: "https://fengyq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -31,9 +31,10 @@ navigation:
 # Social links
 social_links:
   google_scholar: nWYWiVUAAAAJ
-  github: FengLab-CPU
+  github: fengyq
   linkedin: yuanqing-feng-a4384477
   twitter: FengYuanqing
+  wechat: FengYuanqing
 
 # Other settings
 show_excerpts: true 

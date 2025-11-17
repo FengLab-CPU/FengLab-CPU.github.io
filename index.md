@@ -43,8 +43,8 @@ title: Home
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 45%;
-        opacity: 0.5;
-        filter: brightness(0.9);
+        opacity: 0.3;
+        filter: brightness(0.95);
         z-index: 0;
         transform: none;
     }
@@ -77,6 +77,31 @@ title: Home
         margin-left: auto;
         margin-right: auto;
         line-height: 1.6;
+    }
+
+    .hero-tags {
+        width: 100%;
+        max-width: 800px;
+        margin: 1.5rem auto 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .hero-tag {
+        display: inline-block;
+        padding: 0.35rem 0.9rem;
+        border-radius: 9999px;
+        border: 1px solid rgba(148, 163, 184, 0.9);
+        background: transparent;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: #111827;
+        text-transform: none;
     }
     
     .btn {
@@ -292,8 +317,13 @@ title: Home
         }
         
         .hero-subtitle {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             text-align: center;
+        }
+
+        .hero-tags {
+            margin: 1.2rem auto 1.5rem;
+            padding: 0 1rem;
         }
         
         .hero-ticker {
@@ -345,7 +375,12 @@ title: Home
 
 <div class="hero-section">
     <h1 class="hero-title">Functional Genomics Lab @ CPU</h1>
-    <p class="hero-subtitle">Welcome to our research laboratory focused on understanding genome function through cutting-edge functional genomics approaches.</p>
+    <p class="hero-subtitle">We explore how genetic variation shapes human biology, from molecular mechanisms to disease and evolution.</p>
+    <div class="hero-tags">
+        <span class="hero-tag">Variant-to-Function</span>
+        <span class="hero-tag">Human Diseases  and Evolution</span>
+        <span class="hero-tag">Scalable Genomics Technologies</span>
+    </div>
 </div>
 
 <!-- News Ticker moved below hero -->

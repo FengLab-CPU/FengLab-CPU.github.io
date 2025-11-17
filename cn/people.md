@@ -425,7 +425,7 @@ permalink: /cn/people/
     </div>
 
     <div class="lab-section">
-        <h2 class="section-title">在职成员</h2>
+        <h2 class="section-title">团队成员</h2>
         <div class="people-grid">
             <div class="person-card">
                 <div class="person-photo">👩‍🎓</div>

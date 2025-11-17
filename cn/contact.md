@@ -37,7 +37,7 @@ permalink: /cn/contact/
     }
 
     .contact-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-top: 0.1rem;
         margin-bottom: 0.5rem;
         font-weight: 700;

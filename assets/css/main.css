@@ -169,7 +169,7 @@ a:hover::after {
 }
 
 .site-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--heading-color);
     text-decoration: none;
@@ -190,6 +190,7 @@ a:hover::after {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 700;
+    font-size: 1.05rem;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
     transition: all 0.3s ease;

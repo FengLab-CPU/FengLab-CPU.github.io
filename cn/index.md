@@ -55,7 +55,7 @@ title: 首页
     }
     
     .hero-title {
-        font-size: clamp(3rem, 4vw, 4.25rem);
+        font-size: clamp(2.6rem, 3.4vw, 3.4rem);
         font-weight: 700;
         margin-bottom: 1.05rem;
         background: var(--gradient-secondary);

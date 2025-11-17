@@ -334,7 +334,7 @@ title: 首页
 
 <div class="hero-section">
     <h1 class="hero-title">中国药科大学功能基因组学实验室</h1>
-    <p class="hero-subtitle">解析遗传变异驱动疾病与表型差异的分子机制，挖掘新药靶点，推动精准医学发展。</p>
+    <p class="hero-subtitle">解析遗传变异驱动疾病发生与表型差异的分子机制，发现潜在新药靶点，推动精准医学发展。</p>
     <div class="hero-tags">
         <span class="hero-tag">遗传突变功能解析</span>
         <span class="hero-tag">疾病发生与人类进化</span>

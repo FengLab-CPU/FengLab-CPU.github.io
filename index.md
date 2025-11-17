@@ -334,7 +334,7 @@ title: Home
 
 <div class="hero-section">
     <h1 class="hero-title">Functional Genomics Lab @ CPU</h1>
-    <p class="hero-subtitle">We explore how genetic variation shapes human biology, from molecular mechanisms to disease and evolution.</p>
+    <p class="hero-subtitle">We explore how genetic variations shape human biology, from molecular mechanisms to diseases and evolution.</p>
     <div class="hero-tags">
         <span class="hero-tag">Variant-to-Function</span>
         <span class="hero-tag">Human Diseases  and Evolution</span>

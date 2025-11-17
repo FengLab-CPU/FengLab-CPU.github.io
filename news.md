@@ -3,6 +3,10 @@ layout: default
 title: News
 permalink: /news/
 news_items:
+  - date: "APR 2026"
+    title: "Joined China Pharmaceutical University"
+    excerpt: "Started as Professor (Ph.D. Advisor) at China Pharmaceutical University in April 2026."
+    category: "position"
   - date: "FEB 2024"
     title: "Nature Genetics Publication"
     excerpt: 'Our paper "Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans" was published in Nature Genetics.'

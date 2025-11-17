@@ -1,0 +1,54 @@
+# _data/profile.yml
+
+name: 冯园庆 博士
+title: 教授 （博士生导师）
+position: 中国药科大学 功能基因组学实验室 负责人
+
+tagline: 遗传变异｜群体遗传学| 功能基因组学｜精准医疗
+
+education:
+  - period: "2007–2011"
+    degree: "学士"
+    field: "制药工程"
+    institution: "吉林大学"
+  - period: "2011–2017"
+    degree: "博士"
+    field: "分子医学"
+    institution: "北京大学"
+    advisor: "肖瑞平 教授"
+
+positions:
+  - period: "2017–2018"
+    title: "博士后"
+    institution: "北京大学 生命科学学院"
+    advisor: "季雄 教授"
+  - period: "2018–2023"
+    title: "博士后"
+    institution: "宾夕法尼亚大学 遗传系"
+    advisor: "Sarah Tishkoff 院士"
+  - period: "2023–至今"
+    title: "副研究员"
+    institution: "宾夕法尼亚大学 遗传系"
+    advisor: "Sarah Tishkoff 院士"
+
+highlights:
+揭示非洲人群肤色多样性的分子机制
+通过高通量功能基因组学技术，系统鉴定调控色素生成的非编码突变与关键增强子（如 OCA2、MITF、LEF1、TRPS1 等），发现驱动肤色差异的功能突变，并揭示人类肤色进化的遗传基础。
+
+解析心脏能量代谢的跨物种调控机制
+鉴定 TRIM72 启动子突变在灵长类中的演化及其对心肌能量代谢和线粒体功能的调控作用，阐明哺乳动物心脏生理差异的分子演化机制。
+
+构建非编码突变功能解析体系
+整合群体遗传学、功能基因组学与计算，高通量研究非编码突变功能及其靶基因，为复杂疾病防治和药物靶点发现提供新策略。
+
+推动群体遗传学与疾病易感性研究
+参与构建非洲人群免疫图谱，研究感染性疾病等相关基因的自然选择与表型关联，揭示人群特异性疾病发生机制和促进精准医学发展。
+
+awards:
+  - "2023 陈·扎克伯格基金会（CZI）青年科学家奖"
+  - "2022 美国人类遗传学年会（ASHG）全体报告（Plenary Talk）"
+  - "2017 北京大学 博雅博士后奖"
+
+contact:
+  email: "fengyuanqing2010@gmail.com"
+  scholar: "https://scholar.google.com/citations?user=nWYWiVUAAAAJ&hl=en"

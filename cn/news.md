@@ -3,6 +3,10 @@ layout: default
 title: 新闻
 permalink: /cn/news/
 news_items:
+  - date: "2026年4月"
+    title: "入职中国药科大学"
+    excerpt: "于 2026 年 4 月入职中国药科大学，担任教授（博士生导师）。"
+    category: "position"
   - date: "2024年2月"
     title: "Nature Genetics 论文发表"
     excerpt: '我们的论文 “Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans” 发表在《Nature Genetics》上。'
@@ -239,4 +243,3 @@ news_items:
         </div>
     </div>
 </div>
-

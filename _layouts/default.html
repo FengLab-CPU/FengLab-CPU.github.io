@@ -28,6 +28,8 @@
                 {% else %}
                     {% if page.url == '/' %}
                         {% assign chinese_url = '/cn/' %}
+                    {% elsif page.url == '/people/yuanqing-feng/' %}
+                        {% assign chinese_url = '/cn/people/' %}
                     {% else %}
                         {% assign chinese_url = '/cn' | append: page.url %}
                     {% endif %}

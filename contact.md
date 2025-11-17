@@ -319,7 +319,7 @@ permalink: /contact/
                 </h3>
                 <div class="contact-details">
                     <p>China Pharmaceutical University<br>
-                    School of Medicine</p>
+                    School of Basic and Clinical Medicine</p>
                 </div>
             </div>
 

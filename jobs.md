@@ -296,6 +296,19 @@ permalink: /jobs/
                         <li>Excellent communication and collaboration skills</li>
                     </ul>
                 </div>
+
+                <div class="application-info">
+                    <h4>Compensation and Benefits:</h4>
+                    <p>1. Appointment as a “Xingyao Research Postdoctoral Fellow” at China Pharmaceutical University, with a starting annual salary from <span style="font-weight:600;">300,000 RMB</span>.</p>
+                    <p>2. Full access to university benefits, including medical insurance, housing fund, and additional welfare provided by the university trade union.</p>
+                </div>
+
+                <div class="application-info">
+                    <h4>Career Development:</h4>
+                    <p>1. Outstanding postdocs are strongly supported to apply for long‑term positions at China Pharmaceutical University, such as Special Research Fellow or tenure‑track Associate Professor / Research Associate Professor.</p>
+                    <p>2. The lab will support applications for competitive funding schemes (e.g., National Postdoctoral Fellow Programs, National Natural Science Foundation of China, Jiangsu Provincial Natural Science Foundation, Jiangsu Excellent Postdoctoral Program). Salary and funding from different sources can be stacked with no upper cap.</p>
+                    <p>3. Workplace: Jiangning Campus, China Pharmaceutical University, Nanjing.</p>
+                </div>
                 
             </div>
             

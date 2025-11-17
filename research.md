@@ -644,7 +644,7 @@ title: Research
                     </ul>
                 </div>
                 <div class="card-figure">
-                    <img src="/assets/images/biotech.jpg" alt="Functional Genomics">
+                    <img src="/assets/images//biotech.jpg" alt="Functional Genomics">
                 </div>
             </div>
         </div>

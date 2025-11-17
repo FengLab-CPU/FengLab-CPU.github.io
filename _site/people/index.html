@@ -13,14 +13,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility." />
 <meta property="og:description" content="I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility." />
-<link rel="canonical" href="http://localhost:4001/people/" />
-<meta property="og:url" content="http://localhost:4001/people/" />
+<link rel="canonical" href="http://localhost:4000/people/" />
+<meta property="og:url" content="http://localhost:4000/people/" />
 <meta property="og:site_name" content="Yuanqing Feng (冯园庆)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="People" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility.","headline":"People","url":"http://localhost:4001/people/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility.","headline":"People","url":"http://localhost:4000/people/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -64,6 +64,150 @@
         box-sizing: border-box;
     }
     
+    .featured-person {
+        margin-bottom: 2.5rem;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 16px;
+        box-shadow: var(--shadow-light);
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .featured-person::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--gradient-secondary);
+    }
+
+    .featured-person-link {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.75rem;
+        padding: 1.6rem 1.9rem 1.7rem;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .featured-person-link::after {
+        display: none;
+    }
+
+    .featured-person-photo {
+        flex: 0 0 210px;
+        max-width: 210px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-light);
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    .featured-person-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .featured-person-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .featured-person-name {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin: 0 0 0.3rem;
+    }
+
+    .featured-person-title {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-bottom: 0.2rem;
+    }
+
+    .featured-person-position {
+        font-size: 0.95rem;
+        color: var(--heading-color);
+        margin-bottom: 0.8rem;
+    }
+
+    .featured-person-meta {
+        font-size: 0.95rem;
+        color: var(--text-color);
+        margin-bottom: 0.6rem;
+    }
+
+    .featured-person-summary {
+        font-size: 0.95rem;
+        line-height: 1.9;
+        color: var(--text-color);
+    }
+
+    .featured-block {
+        margin: 0 0 0.6rem;
+    }
+
+    .featured-block strong {
+        color: var(--heading-secondary);
+    }
+
+    .featured-icon {
+        color: var(--heading-accent);
+        margin-right: 0.35rem;
+    }
+
+    /* CV layout for featured PI */
+    .cv-section {
+        margin: 1.1rem 0 1.4rem;
+        font-size: 0.95rem;
+    }
+
+    .cv-section-title {
+        margin: 0 0 0.75rem;
+        font-size: 1.02rem;
+        font-weight: 600;
+        color: var(--heading-secondary);
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    .cv-section-title i {
+        color: var(--heading-accent);
+    }
+
+    .cv-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .cv-item {
+        display: flex;
+        margin-bottom: 0.45rem;
+    }
+
+    .cv-date {
+        font-weight: 400;
+        color: #000000;
+        min-width: 120px;
+        flex-shrink: 0;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .cv-detail {
+        flex: 1;
+        color: var(--text-color);
+    }
+
     .people-header {
         font-size: 2.5rem;
         font-weight: 700;
@@ -103,7 +247,7 @@
     
     .people-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(4, 1fr);
         gap: 0.36rem;
         margin-bottom: 3rem;
         width: 100%;
@@ -254,6 +398,22 @@
         .people-header {
             font-size: 2rem;
             margin-bottom: 2rem;
+        }
+
+        .featured-person-link {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .featured-person-photo {
+            max-width: 260px;
+            width: 100%;
+        }
+
+        .featured-person-info {
+            width: 100%;
+            text-align: left;
         }
         
         .people-grid {
@@ -454,6 +614,16 @@
         }
     }
     
+    .person-card-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .person-card-link::after {
+        display: none;
+    }
+
     /* Mobile-first horizontal layout for all small screens */
     @media (max-width: 480px) {
         .people-grid {
@@ -516,20 +686,99 @@
 </style>
 
 <div class="people-container">
+    <div class="featured-person">
+        <div class="featured-person-link">
+            <div class="featured-person-photo">
+                <img src="/assets/images/me.jpg" alt="Yuanqing Feng" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div class="featured-person-info">
+                <div class="featured-person-name">Yuanqing Feng</div>
+                <div class="featured-person-title">Professor · Ph.D. Advisor</div>
+                <div class="featured-person-position">Principal Investigator, Functional Genomics Laboratory, China Pharmaceutical University</div>
+                <div class="featured-person-summary">
+                    <div class="cv-section">
+                        <div class="cv-section-title">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                            <span>Education</span>
+                        </div>
+                        <ul class="cv-list">
+                            <li class="cv-item">
+                                <div class="cv-date">2011–2017</div>
+                                <div class="cv-detail">
+                                    Ph.D., Molecular Medicine, Peking University
+                                </div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2007–2011</div>
+                                <div class="cv-detail">
+                                    B.S., Pharmaceutical Engineering, Jilin University
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-section">
+                        <div class="cv-section-title">
+                            <i class="fas fa-briefcase" aria-hidden="true"></i>
+                            <span>Professional Experience</span>
+                        </div>
+                        <ul class="cv-list">
+                            <li class="cv-item">
+                                <div class="cv-date">2025–Present</div>
+                                <div class="cv-detail">
+                                    Professor (Ph.D. Advisor), China Pharmaceutical University
+                                </div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2023–2025</div>
+                                <div class="cv-detail">
+                                    Research Associate, University of Pennsylvania
+                                </div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2018–2023</div>
+                                <div class="cv-detail">
+                                    Postdoctoral Fellow, University of Pennsylvania
+                                </div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2017–2018</div>
+                                <div class="cv-detail">
+                                    Postdoctoral Researcher, Peking University
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="featured-block">
+                        <i class="fas fa-user featured-icon" aria-hidden="true"></i>
+                        <strong>Research Overview:</strong>
+                        Dr. Feng’s group investigates how human genetic variation shapes complex traits, and disease susceptibility, with a focus on the functional consequences of non‑coding variants and their applications in precision medicine. His work has been published in journals such as <em>Nature Genetics</em>, <em>PNAS</em>, <em>Molecular Biology and Evolution</em>, and <em>Circulation</em>, and he has received honors including the Peking University Boya Postdoctoral Fellowship and the Chan Zuckerberg Initiative Next Generation Researcher Award.
+                    </p>
+                    <p class="featured-block">
+                        <i class="fas fa-dna featured-icon" aria-hidden="true"></i>
+                        <strong>Research Areas:</strong>
+                        functional genomics · population genetics · precision medicine · Complex disease genetics
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Current Lab Members -->
     <div class="lab-section">
         <h2 class="section-title">Current Members</h2>
         <div class="people-grid">
-            
-            <div class="person-card">
-                <div class="person-photo">
-                    <img src="/assets/images/me.jpg" alt="Yuanqing Feng" style="width: 100%; height: 100%; object-fit: cover;" />
+            <a href="/people/yuanqing-feng/" class="person-card-link">
+                <div class="person-card">
+                    <div class="person-photo">
+                        <img src="/assets/images/me.jpg" alt="Yuanqing Feng" style="width: 100%; height: 100%; object-fit: cover;" />
+                    </div>
+                    <div class="person-info">
+                        <div class="person-name">Yuanqing Feng</div>
+                        <div class="person-title">Principal Investigator</div>
+                    </div>
                 </div>
-                <div class="person-info">
-                    <div class="person-name">Yuanqing Feng</div>
-                    <div class="person-title">Principal Investigator</div>
-                </div>
-            </div>
+            </a>
             
             <div class="person-card">
                 <div class="person-photo">👩‍🎓</div>

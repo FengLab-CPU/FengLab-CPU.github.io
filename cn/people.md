@@ -13,6 +13,150 @@ permalink: /cn/people/
         box-sizing: border-box;
     }
 
+    .featured-person {
+        margin-bottom: 2.5rem;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 16px;
+        box-shadow: var(--shadow-light);
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .featured-person::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--gradient-secondary);
+    }
+
+    .featured-person-link {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.75rem;
+        padding: 1.6rem 1.9rem 1.7rem;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .featured-person-link::after {
+        display: none;
+    }
+
+    .featured-person-photo {
+        flex: 0 0 210px;
+        max-width: 210px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-light);
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    .featured-person-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .featured-person-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .featured-person-name {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin: 0 0 0.3rem;
+    }
+
+    .featured-person-title {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-bottom: 0.2rem;
+    }
+
+    .featured-person-position {
+        font-size: 0.95rem;
+        color: var(--heading-color);
+        margin-bottom: 0.8rem;
+    }
+
+    .featured-person-meta {
+        font-size: 0.95rem;
+        color: var(--text-color);
+        margin-bottom: 0.6rem;
+    }
+
+    .featured-person-summary {
+        font-size: 0.95rem;
+        line-height: 1.9;
+        color: var(--text-color);
+    }
+
+    .featured-block {
+        margin: 0 0 0.6rem;
+    }
+
+    .featured-block strong {
+        color: var(--heading-secondary);
+    }
+
+    .featured-icon {
+        color: var(--heading-accent);
+        margin-right: 0.35rem;
+    }
+
+    /* CV layout for featured PI (Chinese) */
+    .cv-section {
+        margin: 1.1rem 0 1.4rem;
+        font-size: 0.95rem;
+    }
+
+    .cv-section-title {
+        margin: 0 0 0.75rem;
+        font-size: 1.02rem;
+        font-weight: 600;
+        color: var(--heading-secondary);
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    .cv-section-title i {
+        color: var(--heading-accent);
+    }
+
+    .cv-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .cv-item {
+        display: flex;
+        margin-bottom: 0.45rem;
+    }
+
+    .cv-date {
+        font-weight: 400;
+        color: #000000;
+        min-width: 120px;
+        flex-shrink: 0;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .cv-detail {
+        flex: 1;
+        color: var(--text-color);
+    }
+
     .section-title {
         font-size: 2.2rem;
         font-weight: 700;
@@ -169,9 +313,35 @@ permalink: /cn/people/
         font-style: italic;
     }
 
+    .person-card-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .person-card-link::after {
+        display: none;
+    }
+
     @media (max-width: 768px) {
         .people-container {
             padding: 1.5rem 1rem;
+        }
+
+        .featured-person-link {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .featured-person-photo {
+            max-width: 260px;
+            width: 100%;
+        }
+
+        .featured-person-info {
+            width: 100%;
+            text-align: left;
         }
 
         .people-grid {
@@ -188,19 +358,75 @@ permalink: /cn/people/
 </style>
 
 <div class="people-container">
+    <div class="featured-person">
+        <div class="featured-person-link">
+            <div class="featured-person-photo">
+                <img src="/assets/images/me.jpg" alt="冯园庆" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="featured-person-info">
+                <div class="featured-person-name">冯园庆</div>
+                <div class="featured-person-title">教授 · 博士生导师</div>
+                <div class="featured-person-position">中国药科大学 功能基因组学实验室 负责人</div>
+                <div class="featured-person-summary">
+                    <div class="cv-section">
+                        <div class="cv-section-title">
+                            <i class="fas fa-graduation-cap featured-icon" aria-hidden="true"></i>
+                            <span>教育背景</span>
+                        </div>
+                        <ul class="cv-list">
+                            <li class="cv-item">
+                                <div class="cv-date">2011–2017</div>
+                                <div class="cv-detail">博士（Ph.D.），北京大学</div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2007–2011</div>
+                                <div class="cv-detail">学士（B.S.），吉林大学</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-section">
+                        <div class="cv-section-title">
+                            <i class="fas fa-briefcase featured-icon" aria-hidden="true"></i>
+                            <span>科研与工作经历</span>
+                        </div>
+                        <ul class="cv-list">
+                            <li class="cv-item">
+                                <div class="cv-date">2025–至今</div>
+                                <div class="cv-detail">教授（博士生导师），中国药科大学</div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2023–2025</div>
+                                <div class="cv-detail">研究助理（Research Associate），美国宾夕法尼亚大学</div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2018–2023</div>
+                                <div class="cv-detail">博士后（Postdoctoral Fellow），美国宾夕法尼亚大学</div>
+                            </li>
+                            <li class="cv-item">
+                                <div class="cv-date">2017–2018</div>
+                                <div class="cv-detail">博士后（Postdoctoral Fellow），北京大学</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="featured-block">
+                        <i class="fas fa-user featured-icon" aria-hidden="true"></i>
+                        <strong>研究简介：</strong>
+                        课题组研究聚焦于探索人类遗传变异的功能，致力于解析人类表型多样性与疾病易感性差异的遗传机制，最终将研究成果应用于个体化用药和精准医疗。 课题组负责人以第一作者发表相关成果在 Nature Genetics、PNAS、MBE、Circulation 等期刊，获得北京大学博雅博士后奖、 Chan Zuckerberg Initiative 青年科学家奖等荣誉，受邀担任 Science、Nature Communications、PNAS、AJHG 等期刊审稿人。
+                    </p>
+                    <p class="featured-block">
+                    <i class="fas fa-dna featured-icon" aria-hidden="true"></i>
+                    <strong>研究方向：</strong>
+                    功能基因组学 · 群体遗传学 · 个体化用药 · 疾病遗传机制
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="lab-section">
         <h2 class="section-title">在职成员</h2>
         <div class="people-grid">
-            <div class="person-card">
-                <div class="person-photo">
-                    <img src="/assets/images/me.jpg" alt="冯园庆" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="person-info">
-                    <div class="person-name">冯园庆</div>
-                    <div class="person-title">课题负责人（PI）</div>
-                </div>
-            </div>
-
             <div class="person-card">
                 <div class="person-photo">👩‍🎓</div>
                 <div class="person-info">

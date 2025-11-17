@@ -1,0 +1,364 @@
+---
+layout: default
+title: Jobs
+permalink: /jobs/
+---
+
+<style>
+    :root {
+        --primary-color: #2C5F2D;
+        --secondary-color: #1E2761;
+        --accent-color: #735DA5;
+        --gradient-primary: linear-gradient(135deg, #2C5F2D 0%, #31473A 100%);
+        --gradient-secondary: linear-gradient(135deg, #1E2761 0%, #2C3E6E 100%);
+        --text-dark: #2D3748;
+        --text-light: #4A5568;
+        --bg-light: #F7FAFC;
+        --border-color: #E2E8F0;
+    }
+
+    .jobs-container {
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .jobs-header {
+        text-align: center;
+        margin-top: 0.1rem;
+        margin-bottom: 0.2rem;
+        padding: 0.8rem;
+        background: transparent;
+        border-radius: 16px;
+        color: inherit;
+        box-shadow: none;
+    }
+
+    .jobs-title {
+        font-size: 2.5rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.8rem;
+        font-weight: 700;
+        color: var(--heading-color);
+    }
+
+    .jobs-subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        color: var(--text-light);
+    }
+
+    .jobs-section {
+        margin: 2rem 0;
+    }
+
+    .jobs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .job-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .job-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--gradient-accent);
+    }
+
+    .job-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        border-color: rgba(115, 93, 165, 0.2);
+    }
+
+    .job-title {
+        font-size: 1.4rem;
+        color: var(--secondary-color);
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .job-type {
+        display: inline-block;
+        background: var(--gradient-accent);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 9999px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .job-description {
+        font-size: 1rem;
+        color: var(--text-light);
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .job-requirements {
+        margin-bottom: 1.5rem;
+    }
+
+    .job-requirements h4 {
+        color: var(--primary-color);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    .job-requirements ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .job-requirements li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        color: var(--text-dark);
+    }
+
+    .job-requirements li::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: var(--accent-color);
+        font-weight: bold;
+    }
+
+    .application-info {
+        background: var(--bg-light);
+        padding: 1.5rem;
+        border-radius: 12px;
+        border-left: 4px solid var(--primary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .application-info h4 {
+        color: var(--primary-color);
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+    }
+
+    .application-info p {
+        font-size: 0.95rem;
+        color: var(--text-dark);
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-email {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .contact-email:hover {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 2rem;
+        padding: 0.8rem 1.5rem;
+        background: white;
+        border: 2px solid var(--primary-color);
+        border-radius: 9999px;
+        transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+        background: var(--gradient-primary);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(44, 95, 45, 0.3);
+    }
+
+    .no-positions {
+        text-align: center;
+        padding: 3rem;
+        background: var(--bg-light);
+        border-radius: 16px;
+        border: 2px dashed var(--border-color);
+    }
+
+    .no-positions h3 {
+        color: var(--text-dark);
+        margin-bottom: 1rem;
+    }
+
+    .no-positions p {
+        color: var(--text-light);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Animation for scroll reveal */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .jobs-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .jobs-title {
+            font-size: 2rem;
+        }
+        
+        .jobs-header {
+            padding: 1.5rem;
+        }
+        
+        .job-card {
+            padding: 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .jobs-container {
+            padding: 1rem 0.75rem;
+        }
+        
+        .jobs-header {
+            padding: 1rem;
+        }
+        
+        .jobs-title {
+            font-size: 1.8rem;
+        }
+    }
+</style>
+
+<div class="jobs-container">
+    <div class="jobs-header fade-in">
+        <h1 class="jobs-title">Join Our Team</h1>
+        <p class="jobs-subtitle">We are always looking for talented and motivated individuals to join our research group. Explore our current opportunities and become part of our mission to advance functional genomics research.</p>
+    </div>
+    
+    <div class="jobs-section">
+        <div class="jobs-grid">
+            
+            <div class="job-card fade-in">
+                <h3 class="job-title">Postdoctoral Researcher</h3>
+                <span class="job-type">Full-time</span>
+                <p class="job-description">
+                    We are seeking a highly motivated postdoctoral researcher to join our functional genomics research program. The successful candidate will work on projects involving high-throughput screening, CRISPR technologies, and single-cell genomics.
+                </p>
+                
+                <div class="job-requirements">
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>Ph.D. in Genetics, Molecular Biology, Bioinformatics, or related field</li>
+                        <li>Experience with functional genomics assays (MPRA, CRISPR screens)</li>
+                        <li>Strong computational skills and programming experience (Python/R)</li>
+                        <li>Track record of high-quality publications</li>
+                        <li>Excellent communication and collaboration skills</li>
+                    </ul>
+                </div>
+                
+                <div class="application-info">
+                    <h4>Application:</h4>
+                    <p>Please send your CV, research statement, and contact information for three references to:</p>
+                    <p><a href="mailto:yuanqing.feng@pennmedicine.upenn.edu" class="contact-email">yuanqing.feng@pennmedicine.upenn.edu</a></p>
+                </div>
+            </div>
+            
+            <div class="job-card fade-in">
+                <h3 class="job-title">Graduate Student Rotation</h3>
+                <span class="job-type">Rotation</span>
+                <p class="job-description">
+                    Graduate students interested in functional genomics, computational biology, or human genetics are welcome to rotate in our lab. We offer exciting projects at the intersection of experimental and computational biology.
+                </p>
+                
+                <div class="job-requirements">
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>Current enrollment in a relevant graduate program</li>
+                        <li>Strong interest in genomics and molecular biology</li>
+                        <li>Basic programming skills preferred</li>
+                        <li>Enthusiasm for interdisciplinary research</li>
+                    </ul>
+                </div>
+                
+                <div class="application-info">
+                    <h4>Application:</h4>
+                    <p>Please contact Dr. Feng directly to discuss rotation opportunities:</p>
+                    <p><a href="mailto:yuanqing.feng@pennmedicine.upenn.edu" class="contact-email">yuanqing.feng@pennmedicine.upenn.edu</a></p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="no-positions fade-in" style="margin-top: 2rem;">
+            <h3>Other Opportunities</h3>
+            <p>
+                We are always interested in hearing from motivated researchers at all levels. If you are interested in our research but don't see a specific position listed, please feel free to contact us with your CV and research interests.
+            </p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="/" class="back-link">
+                <i class="fas fa-home"></i>
+                Back to Homepage
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Intersection Observer for fade-in animations
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        const fadeElements = document.querySelectorAll('.fade-in');
+        fadeElements.forEach(el => observer.observe(el));
+    });
+</script>

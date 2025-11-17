@@ -1,0 +1,8 @@
+<div class="news">
+    {% for item in site.data.news limit: include.limit %}
+    <div class="news-item">
+        <div class="news-date">{{ item.date | date: "%b %Y" | upcase }}</div>
+        <div class="news-content">{{ item.content }}</div>
+    </div>
+    {% endfor %}
+</div>

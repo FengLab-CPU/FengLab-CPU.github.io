@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People - Yuanqing Feng (冯园庆)</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>People | Yuanqing Feng (冯园庆)</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="People" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
+<meta property="og:description" content="Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility." />
+<link rel="canonical" href="http://0.0.0.0:4000/people/" />
+<meta property="og:url" content="http://0.0.0.0:4000/people/" />
+<meta property="og:site_name" content="Yuanqing Feng (冯园庆)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="People" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Research Associate at University of Pennsylvania, focusing on genetic mechanisms underlying human evolution, phenotypic diversity, and disease susceptibility.","headline":"People","url":"http://0.0.0.0:4000/people/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                
+                <a href="/" >Home</a>
+                
+                <a href="/research/" >Research</a>
+                
+                <a href="/publications/" >Publications</a>
+                
+                <a href="/people/" class="active">People</a>
+                
+                <a href="/news/" >News</a>
+                
+                <a href="/jobs/" >Jobs</a>
+                
+                <a href="/contact/" >Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <style>
+    .people-container {
+        margin: 0 auto;
+        padding: 2rem 2rem;
+        width: 100%;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+    
+    .people-header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        text-align: center;
+        margin-bottom: 3rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        letter-spacing: -0.5px;
+    }
+    
+    .lab-section {
+        margin-bottom: 4rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--heading-color);
+        text-align: center;
+        margin-top: 0.1rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0;
+        border-bottom: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        letter-spacing: -0.3px;
+    }
+
+    .section-title::after {
+        content: '';
+        display: block;
+        width: clamp(80px, 25vw, 360px);
+        height: 4px;
+        background: var(--gradient-primary);
+        border-radius: 2px;
+        margin: 0.6rem auto 0;
+    }
+    
+    .people-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 0.6rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        box-sizing: border-box;
+        background: var(--background-subtle);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 1rem;
+    }
+    
+    .person-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 12px;
+        padding: 0.75rem;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        box-shadow: var(--shadow-light);
+        min-height: 210px;
+        transform: scale(0.75);
+        transform-origin: center;
+    }
+    
+    .person-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: var(--shadow-vibrant);
+        border-color: rgba(44, 95, 45, 0.2);
+    }
+    
+    .person-photo {
+        width: clamp(140px, 65%, 240px);
+        aspect-ratio: 5 / 7;
+        border-radius: 0;
+        margin: 0 auto 0.75rem;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border: 0.6px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        transition: all 0.3s ease;
+    }
+    
+    .person-card:hover .person-photo {
+        border-color: var(--secondary-color);
+        transform: scale(1.05);
+    }
+    
+    .person-name {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #2f4f4f;
+        margin-bottom: 0.5rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        letter-spacing: -0.3px;
+    }
+    
+    .person-title {
+        font-size: 1.15rem;
+        color: var(--primary-color);
+        margin-bottom: 0.3rem;
+        font-weight: 500;
+    }
+    
+    .person-dept {
+        font-size: 0.85rem;
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+    
+    .person-contact {
+        font-size: 0.85rem;
+        color: var(--heading-accent);
+    }
+    
+    .person-contact a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 500;
+    }
+    
+    .person-contact a:hover {
+        color: #2f4f4f;
+        text-decoration: underline;
+    }
+    
+    .alumni-section {
+        background: var(--background-subtle);
+        border-radius: 12px;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .alumni-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+    
+    .alumni-table th,
+    .alumni-table td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .alumni-table th {
+        background: #ffffff;
+        font-weight: 600;
+        color: #2f4f4f;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        letter-spacing: -0.3px;
+    }
+    
+    .alumni-table tr:hover {
+        background: #ffffff;
+    }
+    
+    .alumni-table td {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #36454f;
+    }
+    
+    .year-cell {
+        font-weight: 500;
+        color: #2C5F2D;
+        white-space: nowrap;
+    }
+    
+    .position-cell {
+        color: #36454f;
+    }
+    
+    .current-cell {
+        color: #708090;
+        font-style: italic;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .people-container {
+            padding: 1.5rem 1rem;
+        }
+        
+        .people-header {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .people-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .person-photo {
+            width: 120px;
+            height: 120px;
+            font-size: 2.5rem;
+        }
+        
+        .alumni-table {
+            font-size: 0.9rem;
+        }
+        
+        .alumni-table th,
+        .alumni-table td {
+            padding: 0.5rem;
+        }
+    }
+    
+    /* iPhone specific optimizations - HORIZONTAL LAYOUT */
+    @media (max-width: 414px) {
+        .people-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+            padding: 0 1rem !important;
+        }
+        
+        .person-card {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            text-align: left !important;
+            gap: 1rem !important;
+            padding: 1rem !important;
+            min-height: auto !important;
+        }
+        
+        .person-photo {
+            width: 60px !important;
+            height: 60px !important;
+            font-size: 1.5rem !important;
+            margin: 0 !important;
+            flex-shrink: 0 !important;
+        }
+        
+        .person-info {
+            flex: 1 !important;
+            min-width: 0 !important;
+            text-align: left !important;
+        }
+        
+        .person-name,
+        .person-title,
+        .person-dept {
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            text-align: left !important;
+        }
+        
+        .person-name {
+            font-size: 1rem !important;
+            margin-bottom: 0.2rem !important;
+        }
+        
+        .person-title {
+            font-size: 0.85rem !important;
+            margin-bottom: 0.1rem !important;
+        }
+        
+        .person-dept {
+            font-size: 0.8rem !important;
+            margin-bottom: 0.3rem !important;
+            font-style: italic !important;
+        }
+        
+        .person-contact a {
+            font-size: 0.8rem !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            display: block !important;
+        }
+        
+        .people-container {
+            padding: 1rem !important;
+        }
+    }
+    
+    /* iPhone 14/15/16 specific optimization */
+    @media (max-width: 393px) {
+        .people-grid {
+            gap: 0.6rem !important;
+            padding: 0 0.5rem !important;
+        }
+        
+        .person-card {
+            padding: 0.8rem !important;
+            gap: 0.8rem !important;
+        }
+        
+        .person-photo {
+            width: 55px !important;
+            height: 55px !important;
+            font-size: 1.3rem !important;
+        }
+        
+        .person-name {
+            font-size: 0.95rem !important;
+        }
+        
+        .person-title {
+            font-size: 0.8rem !important;
+        }
+        
+        .person-dept {
+            font-size: 0.75rem !important;
+        }
+        
+        .person-contact a {
+            font-size: 0.75rem !important;
+        }
+    }
+    
+    /* Small iPhone optimization */
+    @media (max-width: 375px) {
+        .people-grid {
+            gap: 0.8rem !important;
+            padding: 0 0.8rem !important;
+        }
+        
+        .person-card {
+            padding: 0.8rem !important;
+            gap: 0.8rem !important;
+        }
+        
+        .person-photo {
+            width: 50px !important;
+            height: 50px !important;
+            font-size: 1.2rem !important;
+        }
+        
+        .person-name {
+            font-size: 0.9rem !important;
+        }
+        
+        .person-title {
+            font-size: 0.8rem !important;
+        }
+        
+        .person-dept {
+            font-size: 0.75rem !important;
+        }
+        
+        .person-contact a {
+            font-size: 0.75rem !important;
+        }
+        
+        .section-title {
+            font-size: 1.2rem !important;
+        }
+        
+        .people-container {
+            padding: 0.8rem !important;
+        }
+    }
+    
+    @media (max-width: 768px) and (min-width: 481px) {
+        .people-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .person-card {
+            padding: 1rem;
+        }
+        
+        .person-photo {
+            width: 110px;
+            height: 110px;
+            font-size: 2.2rem;
+        }
+        
+        .person-name {
+            font-size: 1.05rem;
+        }
+        
+        .person-title {
+            font-size: 0.9rem;
+        }
+        
+        .person-dept {
+            font-size: 0.85rem;
+        }
+    }
+    
+    /* Mobile-first horizontal layout for all small screens */
+    @media (max-width: 480px) {
+        .people-grid {
+            grid-template-columns: 1fr !important;
+            gap: 0.8rem !important;
+            padding: 0 0.5rem !important;
+        }
+        
+        .person-card {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            gap: 0.8rem !important;
+            padding: 0.8rem !important;
+            text-align: left !important;
+        }
+        
+        .person-photo {
+            width: 50px !important;
+            height: 50px !important;
+            font-size: 1.2rem !important;
+            margin: 0 !important;
+            flex-shrink: 0 !important;
+        }
+        
+        .person-info {
+            flex: 1 !important;
+            min-width: 0 !important;
+            text-align: left !important;
+        }
+        
+        .person-name {
+            font-size: 0.9rem !important;
+            margin-bottom: 0.1rem !important;
+        }
+        
+        .person-title {
+            font-size: 0.8rem !important;
+            margin-bottom: 0.1rem !important;
+        }
+        
+        .person-dept {
+            font-size: 0.75rem !important;
+            margin-bottom: 0.2rem !important;
+            font-style: italic !important;
+        }
+        
+        .person-contact a {
+            font-size: 0.75rem !important;
+        }
+        
+        .section-title {
+            font-size: 1.2rem !important;
+        }
+        
+        .people-container {
+            padding: 0.8rem !important;
+        }
+    }
+</style>
+
+<div class="people-container">
+    <!-- Current Lab Members -->
+    <div class="lab-section">
+        <h2 class="section-title">Current Members</h2>
+        <div class="people-grid">
+            
+            <div class="person-card">
+                <div class="person-photo">
+                    <img src="/assets/images/me.jpg" alt="Yuanqing Feng" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div class="person-info">
+                    <div class="person-name">Yuanqing Feng</div>
+                    <div class="person-title">Principal Investigator</div>
+                    <div class="person-contact">
+                        <a href="mailto:Fengyuanqing2010@gmail.com">fengyuanqing2010@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="person-card">
+                <div class="person-photo">👩‍🎓</div>
+                <div class="person-info">
+                    <div class="person-name">Graduate Student 1</div>
+                    <div class="person-title">PhD Student</div>
+                </div>
+            </div>
+            
+            <div class="person-card">
+                <div class="person-photo">👨‍🎓</div>
+                <div class="person-info">
+                    <div class="person-name">Graduate Student 2</div>
+                    <div class="person-title">PhD Student</div>
+                </div>
+            </div>
+            
+            <div class="person-card">
+                <div class="person-photo">👩‍🔬</div>
+                <div class="person-info">
+                    <div class="person-name">Postdoc Researcher</div>
+                    <div class="person-title">Postdoc Researcher</div>
+                </div>
+            </div>
+            
+            <div class="person-card">
+                <div class="person-photo">👨‍💻</div>
+                <div class="person-info">
+                    <div class="person-name">Research Specialist</div>
+                    <div class="person-title">Research Specialist</div>
+                </div>
+            </div>
+            
+            <div class="person-card">
+                <div class="person-photo">👩‍🔬</div>
+                <div class="person-info">
+                    <div class="person-name">Undergraduate Student</div>
+                    <div class="person-title">Undergraduate Student</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Lab Alumni -->
+    <div class="alumni-section">
+        <h2 class="section-title">Lab Alumni</h2>
+        <table class="alumni-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position in Lab</th>
+                    <th>Year</th>
+                    <th>Current Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sample Alumni 1</strong></td>
+                    <td>PhD Student</td>
+                    <td class="year-cell">2023</td>
+                    <td class="current-cell">Postdoc, PKU</td>
+                </tr>
+                <tr>
+                    <td><strong>Sample Alumni 4</strong></td>
+                    <td>Research Specialist</td>
+                    <td class="year-cell">2020</td>
+                    <td class="current-cell">Senior Scientist, Biotech Company</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="mailto:Fengyuanqing2010@gmail.com" class="icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=nWYWiVUAAAAJ" class="icon" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/fengyq" class="icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/FengYuanqing" class="icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://clustrmaps.com/site/1c3yz" class="icon" title="Visitor Map">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Yuanqing Feng (冯园庆). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.site-header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

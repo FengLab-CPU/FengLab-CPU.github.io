@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{% if page.url contains '_cn' %}zh{% else %}en{% endif %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    {% seo %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                {% for item in site.navigation %}
+                <a href="{{ site.baseurl }}{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="mailto:{{ site.email }}" class="icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user={{ site.social_links.google_scholar }}" class="icon" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/{{ site.social_links.github }}" class="icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/{{ site.social_links.twitter }}" class="icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://clustrmaps.com/site/1c3yz" class="icon" title="Visitor Map">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; {{ site.time | date: '%Y' }} Yuanqing Feng (冯园庆). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.site-header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% comment %} Get latest news items from news page front matter {% endcomment %}
+{% assign news_page = site.pages | where_exp: "page", "page.path contains 'news.md'" | first %}
+
+<div class="news-grid">
+  {% for item in news_page.news_items limit: 3 %}
+    <a href="/news/" class="news-item fade-in-up">
+      <div class="news-date">{{ item.date }}</div>
+      {% if item.category %}
+      <span class="news-category {{ item.category }}">{{ item.category }}</span>
+      {% endif %}
+      <div class="news-title">{{ item.title }}</div>
+      <div class="news-excerpt">{{ item.excerpt | truncate: 150 }}</div>
+    </a>
+  {% endfor %}
+</div>

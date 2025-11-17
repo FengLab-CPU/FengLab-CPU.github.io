@@ -1,0 +1,40 @@
+title: Yuanqing Feng (冯园庆)
+email: Fengyuanqing2010@gmail.com
+description: >- 
+  PI @ CPU.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://FengLab-CPU.github.io" # the base hostname 
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: People
+    url: /people/
+  - title: News
+    url: /news/
+  - title: Jobs
+    url: /jobs/
+  - title: Contact
+    url: /contact/
+
+# Social links
+social_links:
+  google_scholar: nWYWiVUAAAAJ
+  github: FengLab-CPU
+  linkedin: yuanqing-feng-a4384477
+  twitter: FengYuanqing
+
+# Other settings
+show_excerpts: true 
+permalink: /:categories/:year/:month/:day/:title/

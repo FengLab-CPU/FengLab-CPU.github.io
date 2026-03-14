@@ -314,6 +314,10 @@ title: Home
         .ticker-item {
             white-space: normal;
         }
+
+        .ticker-duplicate {
+            display: none;
+        }
     }
     
     @media (max-width: 480px) {
@@ -355,12 +359,14 @@ title: Home
                 <span class="ticker-title">{{ item.title }}</span>
             </a>
             {% endfor %}
+            <span class="ticker-duplicate">
             {% for item in news_page.news_items limit: 4 %}
             <a class="ticker-item" href="/news/">
                 <span class="ticker-date">{{ item.date }}</span>
                 <span class="ticker-title">{{ item.title }}</span>
             </a>
             {% endfor %}
+            </span>
         </div>
     </div>
     <a class="ticker-link" href="/news/">View all →</a>

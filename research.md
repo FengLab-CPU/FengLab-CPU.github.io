@@ -378,6 +378,10 @@ title: Research
     }
 
     @media (max-width: 480px) {
+        .research-intro-image {
+            width: 80%;
+            max-width: 280px;
+        }
         .research-card {
             padding: 1rem;
         }
@@ -512,6 +516,14 @@ title: Research
 
         .research-intro-text {
             padding: 1.25rem;
+        }
+
+        .research-intro-image {
+            float: none;
+            display: block;
+            width: 60%;
+            max-width: 320px;
+            margin: 1rem auto;
         }
 
         .research-section {

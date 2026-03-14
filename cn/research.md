@@ -212,6 +212,14 @@ permalink: /cn/research/
             font-size: 2rem;
         }
 
+        .research-intro-image {
+            float: none;
+            display: block;
+            width: 60%;
+            max-width: 320px;
+            margin: 1rem auto;
+        }
+
         .card-header {
             flex-direction: column;
             align-items: stretch;
@@ -219,13 +227,56 @@ permalink: /cn/research/
         }
 
         .card-content {
+            width: 100%;
+            max-width: 100%;
             padding-left: 0;
         }
 
         .card-figure {
             flex: none;
             width: 100%;
+            max-width: 100%;
             margin-top: 0.5rem;
+        }
+
+        .card-figure img {
+            height: auto;
+            width: clamp(220px, 70vw, 320px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .research-intro-image {
+            width: 80%;
+            max-width: 280px;
+        }
+
+        .research-card {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            padding: 0.4rem 0.8rem;
+        }
+
+        .card-lead {
+            font-size: 0.95rem;
+        }
+
+        .card-list li {
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+        }
+
+        .card-figure img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+        }
+
+        .card-header {
+            column-gap: 0.75rem;
         }
     }
 </style>

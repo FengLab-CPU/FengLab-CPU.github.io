@@ -161,6 +161,7 @@ a:hover::after {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    padding-right: calc(2rem + 110px); /* reserve space for the lang-toggle button */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,11 +417,28 @@ html[lang="zh"] .main-nav a {
 }
 
 /* Responsive design */
+@media (max-width: 900px) {
+    .header-container {
+        gap: 1rem;
+        padding-right: calc(1rem + 100px);
+    }
+
+    .main-nav {
+        gap: 0.5rem;
+    }
+
+    .main-nav a {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.95rem;
+    }
+}
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
         gap: 1rem;
         padding: 0 1rem;
+        padding-right: 1rem; /* reset, lang-toggle goes static */
         justify-content: center;
     }
     

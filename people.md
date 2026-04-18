@@ -644,8 +644,8 @@ title: People
             </div>
             <div class="featured-person-info">
                 <div class="featured-person-name">Yuanqing Feng</div>
-                <div class="featured-person-title">Professor · Ph.D. Advisor</div>
-                <div class="featured-person-position">Principal Investigator, Functional Genomics Laboratory, China Pharmaceutical University</div>
+                <div class="featured-person-title">Professor</div>
+                <div class="featured-person-position">Functional Genomics Laboratory, China Pharmaceutical University</div>
                 <div class="featured-person-summary">
                     <div class="cv-section">
                         <div class="cv-section-title">
@@ -677,7 +677,7 @@ title: People
                             <li class="cv-item">
                                 <div class="cv-date">2025–Present</div>
                                 <div class="cv-detail">
-                                    Professor (Ph.D. Advisor), China Pharmaceutical University
+                                    Professor, China Pharmaceutical University
                                 </div>
                             </li>
                             <li class="cv-item">
@@ -719,18 +719,6 @@ title: People
     <div class="lab-section">
         <h2 class="section-title">Current Members</h2>
         <div class="people-grid">
-            <a href="/people/yuanqing-feng/" class="person-card-link">
-                <div class="person-card">
-                    <div class="person-photo">
-                        <img src="/assets/images/me.jpg" alt="Yuanqing Feng" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="person-info">
-                        <div class="person-name">Yuanqing Feng</div>
-                        <div class="person-title">Principal Investigator</div>
-                    </div>
-                </div>
-            </a>
-            
             <div class="person-card">
                 <div class="person-photo">👩‍🎓</div>
                 <div class="person-info">

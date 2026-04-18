@@ -368,7 +368,7 @@ permalink: /cn/people/
             </div>
             <div class="featured-person-info">
                 <div class="featured-person-name">冯园庆</div>
-                <div class="featured-person-title">教授 · 博士生导师</div>
+                <div class="featured-person-title">教授</div>
                 <div class="featured-person-position">中国药科大学 功能基因组学实验室 负责人</div>
                 <div class="featured-person-summary">
                     <div class="cv-section">
@@ -396,7 +396,7 @@ permalink: /cn/people/
                         <ul class="cv-list">
                             <li class="cv-item">
                                 <div class="cv-date">2025–至今</div>
-                                <div class="cv-detail">教授（博士生导师），中国药科大学</div>
+                                <div class="cv-detail">教授，中国药科大学</div>
                             </li>
                             <li class="cv-item">
                                 <div class="cv-date">2023–2025</div>

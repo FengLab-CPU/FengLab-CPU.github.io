@@ -28,7 +28,7 @@ title: Research
     .research-header {
         background: white;
         border-radius: 16px;
-        padding: 0.75rem 2.5rem 2.5rem 2.5rem;
+        padding: 0.75rem 2rem 2rem 2rem;
         margin-bottom: 0.3rem;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         border: 1px solid #e2e8f0;
@@ -62,8 +62,8 @@ title: Research
     }
 
     .research-intro-layout {
-        max-width: 1100px;
-        margin: 2rem auto 2.5rem;
+        max-width: 100%;
+        margin: 1rem 0;
     }
 
     .research-overview-text {
@@ -201,12 +201,14 @@ title: Research
         font-size: 1.1rem;
         line-height: 1.8;
         color: var(--text-dark);
-        padding: 1.5rem;
-        background: var(--bg-light);
-        border-radius: 12px;
-        border-left: 4px solid var(--primary-color);
+        padding: 2.25rem;
+        background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+        border-radius: 20px;
+        border: 1px solid #e6edf5;
+        box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
         text-align: justify;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        overflow-wrap: break-word;
+        box-sizing: border-box;
     }
 
     .research-intro-image {
@@ -508,14 +510,16 @@ title: Research
         
         .research-header p {
             font-size: 1.05rem;
+            text-align: left;
         }
 
         .research-intro-layout {
-            margin: 1.5rem auto 2rem;
+            margin: 0.5rem 0;
         }
 
         .research-intro-text {
             padding: 1.25rem;
+            text-align: left;
         }
 
         .research-intro-image {

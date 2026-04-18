@@ -48,7 +48,8 @@ permalink: /cn/people/
 
     .featured-person-photo {
         flex: 0 0 210px;
-        max-width: 210px;
+        width: 210px;
+        aspect-ratio: 3 / 4;
         border-radius: 12px;
         overflow: hidden;
         border: 1px solid var(--border-color);
@@ -61,6 +62,7 @@ permalink: /cn/people/
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center top;
     }
 
     .featured-person-info {
@@ -335,8 +337,9 @@ permalink: /cn/people/
         }
 
         .featured-person-photo {
-            max-width: 260px;
-            width: 100%;
+            flex: none;
+            width: min(260px, 80%);
+            aspect-ratio: 3 / 4;
         }
 
         .featured-person-info {

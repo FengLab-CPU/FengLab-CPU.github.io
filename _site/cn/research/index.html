@@ -13,14 +13,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility." />
 <meta property="og:description" content="I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility." />
-<link rel="canonical" href="https://fenglab-cpu.github.io//cn/research/" />
-<meta property="og:url" content="https://fenglab-cpu.github.io//cn/research/" />
+<link rel="canonical" href="http://localhost:4001/cn/research/" />
+<meta property="og:url" content="http://localhost:4001/cn/research/" />
 <meta property="og:site_name" content="Yuanqing Feng (冯园庆)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="研究" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility.","headline":"研究","url":"https://fenglab-cpu.github.io//cn/research/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"I am a professor at China Pharmaceutical University, focusing on genetic mechanisms underlying human phenotypic diversity, and disease susceptibility.","headline":"研究","url":"http://localhost:4001/cn/research/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -263,6 +263,14 @@
             font-size: 2rem;
         }
 
+        .research-intro-image {
+            float: none;
+            display: block;
+            width: 60%;
+            max-width: 320px;
+            margin: 1rem auto;
+        }
+
         .card-header {
             flex-direction: column;
             align-items: stretch;
@@ -270,13 +278,56 @@
         }
 
         .card-content {
+            width: 100%;
+            max-width: 100%;
             padding-left: 0;
         }
 
         .card-figure {
             flex: none;
             width: 100%;
+            max-width: 100%;
             margin-top: 0.5rem;
+        }
+
+        .card-figure img {
+            height: auto;
+            width: clamp(220px, 70vw, 320px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .research-intro-image {
+            width: 80%;
+            max-width: 280px;
+        }
+
+        .research-card {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            padding: 0.4rem 0.8rem;
+        }
+
+        .card-lead {
+            font-size: 0.95rem;
+        }
+
+        .card-list li {
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+        }
+
+        .card-figure img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+        }
+
+        .card-header {
+            column-gap: 0.75rem;
         }
     }
 </style>
@@ -378,7 +429,7 @@
                 </a>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Yuanqing Feng (冯园庆). All rights reserved.</p>
+                <p>&copy; 2026 Yuanqing Feng (冯园庆). All rights reserved.</p>
             </div>
         </div>
     </footer>

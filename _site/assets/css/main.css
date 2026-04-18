@@ -222,6 +222,7 @@ a:hover::after {
 /* Emphasize Chinese navigation text */
 html[lang="zh"] .main-nav a {
     font-weight: 800;
+    font-size: 1.2rem;
 }
 
 /* Global language toggle */
@@ -431,6 +432,10 @@ html[lang="zh"] .main-nav a {
         padding: 0.4rem 0.7rem;
         font-size: 0.95rem;
     }
+
+    html[lang="zh"] .main-nav a {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -457,6 +462,10 @@ html[lang="zh"] .main-nav a {
     .main-nav a {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
+    }
+
+    html[lang="zh"] .main-nav a {
+        font-size: 1rem;
     }
     
     .content-wrapper {

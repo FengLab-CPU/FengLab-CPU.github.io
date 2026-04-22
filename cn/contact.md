@@ -188,7 +188,7 @@ permalink: /cn/contact/
                 </h3>
                 <div class="contact-details">
                     <p>科研合作与课题相关咨询：</p>
-                    <a href="mailto:fengyuanqing2010@gmail.com" class="contact-link">fengyuanqing2010@gmail.com</a>
+                    <a href="mailto:fengyuanqing@cpu.edu.cn" class="contact-link">fengyuanqing@cpu.edu.cn</a>
                 </div>
             </div>
 

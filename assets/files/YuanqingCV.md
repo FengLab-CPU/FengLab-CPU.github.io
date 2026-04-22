@@ -3,7 +3,7 @@
 
 （ 中国药科大学 教授，博士生导师）
 
-**邮箱：** [fengyuanqing2010@gmail.com](mailto:fengyuanqing2010@gmail.com)
+**邮箱：** [fengyuanqing@cpu.edu.cn](mailto:fengyuanqing@cpu.edu.cn)
 
 ---
 

@@ -251,6 +251,6 @@ git add . && git commit -m "update site content" && git pull --rebase origin mai
 - **Contributing** – Suggestions and pull requests are welcome.
 - **License** – This project uses the MIT License (see `LICENSE`).
 - **Contact** – For questions, email:  
-  `Fengyuanqing2010@gmail.com`
+  `fengyuanqing@cpu.edu.cn`
 
 ---

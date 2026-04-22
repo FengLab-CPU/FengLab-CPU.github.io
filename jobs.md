@@ -273,7 +273,7 @@ permalink: /jobs/
     <div class="jobs-header fade-in">
         <h1 class="jobs-title">Join Our Team</h1>
         <p class="jobs-subtitle">We welcome motivated individuals to join our research group. </p>
-        <p> Contact <a href="mailto:fengyuanqing2010@gmail.com" class="contact-email">fengyuanqing2010@gmail.com</a></p>
+        <p> Contact <a href="mailto:fengyuanqing@cpu.edu.cn" class="contact-email">fengyuanqing@cpu.edu.cn</a></p>
     </div>
     
     <div class="jobs-section">

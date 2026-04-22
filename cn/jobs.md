@@ -302,7 +302,7 @@ permalink: /cn/jobs/
             <p>
                 欢迎有意加入或合作的朋友发送邮件联系。
             </p>
-            <p><a href="mailto:fengyuanqing2010@gmail.com" class="contact-email">fengyuanqing2010@gmail.com</a></p>
+            <p><a href="mailto:fengyuanqing@cpu.edu.cn" class="contact-email">fengyuanqing@cpu.edu.cn</a></p>
         </div>
 
         <div style="text-align: center; margin-top: 3rem;">

@@ -306,7 +306,7 @@ permalink: /contact/
                 </h3>
                 <div class="contact-details">
                     <p>For research inquiries and collaborations:</p>
-                    <a href="mailto:fengyuanqing2010@gmail.com" class="contact-link">fengyuanqing2010@gmail.com</a>
+                    <a href="mailto:fengyuanqing@cpu.edu.cn" class="contact-link">fengyuanqing@cpu.edu.cn</a>
                 </div>
             </div>
             

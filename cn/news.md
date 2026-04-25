@@ -7,30 +7,6 @@ news_items:
     title: "入职中国药科大学"
     excerpt: "于 2026 年 4 月入职中国药科大学，担任教授（博士生导师）。"
     category: "position"
-  - date: "2024年2月"
-    title: "Nature Genetics 论文发表"
-    excerpt: '我们的论文 “Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans” 发表在《Nature Genetics》上。'
-    link: "https://pubmed.ncbi.nlm.nih.gov/38200130/"
-    pmid: "38200130"
-    category: "publication"
-  - date: "2023年11月"
-    title: "Next Generation Scientist 奖项"
-    excerpt: "获得 Chan Zuckerberg Initiative 授予的 Next Generation Scientist Award。"
-    category: "award"
-  - date: "2023年8月"
-    title: "加入宾大新职位"
-    excerpt: "在宾夕法尼亚大学担任研究助理（Research Associate）。"
-    category: "position"
-  - date: "2023年3月"
-    title: "Cell 论文发表"
-    excerpt: '我们的论文 “Whole-genome sequencing reveals a complex African population demographic history” 发表在《Cell》上。'
-    link: "https://pubmed.ncbi.nlm.nih.gov/36868214/"
-    pmid: "36868214"
-    category: "publication"
-  - date: "2022年10月"
-    title: "ASHG 2022 报告"
-    excerpt: "在 ASHG 2022 年会报告非洲人群基因组学相关研究。"
-    category: "presentation"
 ---
 
 <style>

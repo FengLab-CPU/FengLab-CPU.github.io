@@ -7,30 +7,6 @@ news_items:
     title: "Joined China Pharmaceutical University"
     excerpt: "Started as Professor (Ph.D. Advisor) at China Pharmaceutical University in April 2026."
     category: "position"
-  - date: "FEB 2024"
-    title: "Nature Genetics Publication"
-    excerpt: 'Our paper "Integrative functional genomic analyses identify genetic variants influencing skin pigmentation in Africans" was published in Nature Genetics.'
-    link: "https://pubmed.ncbi.nlm.nih.gov/38200130/"
-    pmid: "38200130"
-    category: "publication"
-  - date: "NOV 2023"
-    title: "Next Generation Scientist Award"
-    excerpt: "Received the Next Generation Scientist Award from Chan Zuckerberg Initiative."
-    category: "award"
-  - date: "AUG 2023"
-    title: "New Position at CPU"
-    excerpt: "Started as Research Associate at China Pharmaceutical University."
-    category: "position"
-  - date: "MAR 2023"
-    title: "Cell Publication"
-    excerpt: 'Our paper "Whole-genome sequencing reveals a complex African population demographic history" was published in Cell.'
-    link: "https://pubmed.ncbi.nlm.nih.gov/36868214/"
-    pmid: "36868214"
-    category: "publication"
-  - date: "OCT 2022"
-    title: "ASHG 2022 Presentation"
-    excerpt: "Presented our research on African genomics at the ASHG 2022 Annual Meeting."
-    category: "presentation"
 ---
 
 <style>

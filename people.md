@@ -720,6 +720,15 @@ title: People
         <h2 class="section-title">Current Members</h2>
         <div class="people-grid">
             <div class="person-card">
+                <div class="person-photo">👨‍🎓</div>
+                <div class="person-info">
+                    <div class="person-name">Dai TuCheng</div>
+                    <div class="person-title">PhD Student</div>
+                    <div class="person-dept">Class of 2026</div>
+                </div>
+            </div>
+
+            <div class="person-card">
                 <div class="person-photo">👩‍🎓</div>
                 <div class="person-info">
                     <div class="person-name">Graduate Student 1</div>

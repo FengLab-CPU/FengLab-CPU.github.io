@@ -138,7 +138,7 @@ title: Home
         width: min(720px, 90vw);
         background: rgba(255, 255, 255, 0.8);
         border-radius: 24px;
-        padding: 0.72rem 1.3rem;
+        padding: 0.6rem 1.3rem;
         display: flex;
         align-items: center;
         gap: 1.5rem;
@@ -146,7 +146,7 @@ title: Home
         box-shadow: 0 20px 45px rgba(30, 41, 59, 0.15);
         backdrop-filter: blur(14px);
         margin: 1.5rem auto 0;
-        min-height: 51px;
+        min-height: calc(2.4rem * 3 + 1.2rem);
     }
     
     .ticker-label {
@@ -161,9 +161,9 @@ title: Home
         flex: 1;
         position: relative;
         overflow: hidden;
-        height: 2.56rem;
+        height: calc(2.4rem * 3);
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     
     .ticker-track::before,
@@ -172,27 +172,28 @@ title: Home
         position: absolute;
         left: 0;
         right: 0;
-        height: 18px;
+        height: 16px;
         pointer-events: none;
         z-index: 2;
     }
     
     .ticker-track::before {
         top: 0;
-        background: linear-gradient(180deg, rgba(248, 250, 255, 0.85), transparent);
+        background: linear-gradient(180deg, rgba(248, 250, 255, 0.9), transparent);
     }
     
     .ticker-track::after {
         bottom: 0;
-        background: linear-gradient(0deg, rgba(248, 250, 255, 0.85), transparent);
+        background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), transparent);
     }
     
     .ticker-inner {
         display: flex;
         flex-direction: column;
         gap: 0;
-        animation: tickerScrollY 20s linear infinite;
+        animation: tickerScrollY 18s linear infinite;
         animation-play-state: running;
+        width: 100%;
     }
 
     .hero-ticker:hover .ticker-inner {
@@ -203,24 +204,28 @@ title: Home
         white-space: nowrap;
         font-weight: 600;
         color: #1f2a44;
-        font-size: 0.98rem;
+        font-size: 0.95rem;
         display: flex;
         align-items: center;
         gap: 0.65rem;
-        min-height: 1.92rem;
-        padding: 0.2rem 0;
+        height: 2.4rem;
+        padding: 0;
         text-decoration: none;
+        overflow: hidden;
     }
     
     .ticker-date {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         font-weight: 700;
         color: #5a6bb0;
         letter-spacing: 0.05em;
+        flex-shrink: 0;
     }
     
     .ticker-title {
         color: #1f2a44;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .ticker-item:hover .ticker-title {
@@ -235,6 +240,7 @@ title: Home
         display: inline-flex;
         align-items: center;
         gap: 0.25rem;
+        flex-shrink: 0;
     }
     
     .ticker-link:hover {
@@ -299,24 +305,12 @@ title: Home
             width: 100%;
         }
         
-        .ticker-track,
-        .ticker-inner {
-            flex-direction: column;
-            gap: 0.75rem;
-            animation: none;
-        }
-        
-        .ticker-track::before,
-        .ticker-track::after {
-            display: none;
-        }
-        
-        .ticker-item {
-            white-space: normal;
+        .ticker-track {
+            height: calc(2.4rem * 3);
         }
 
-        .ticker-duplicate {
-            display: none;
+        .ticker-item {
+            white-space: nowrap;
         }
     }
     
@@ -350,23 +344,22 @@ title: Home
 {% assign news_page = site.pages | where: "path", "news.md" | first %}
 {% if news_page and news_page.news_items and news_page.news_items.size > 0 %}
 <div class="hero-ticker">
-    <span class="ticker-label">What's New</span>
+    <span class="ticker-label">News</span>
     <div class="ticker-track">
-        <div class="ticker-inner">
-            {% for item in news_page.news_items limit: 4 %}
+        <div class="ticker-inner" id="tickerInner">
+            {% for item in news_page.news_items limit: 3 %}
             <a class="ticker-item" href="/news/">
                 <span class="ticker-date">{{ item.date }}</span>
                 <span class="ticker-title">{{ item.title }}</span>
             </a>
             {% endfor %}
-            <span class="ticker-duplicate">
-            {% for item in news_page.news_items limit: 4 %}
+            {% comment %}Duplicate for seamless loop{% endcomment %}
+            {% for item in news_page.news_items limit: 3 %}
             <a class="ticker-item" href="/news/">
                 <span class="ticker-date">{{ item.date }}</span>
                 <span class="ticker-title">{{ item.title }}</span>
             </a>
             {% endfor %}
-            </span>
         </div>
     </div>
     <a class="ticker-link" href="/news/">View all →</a>

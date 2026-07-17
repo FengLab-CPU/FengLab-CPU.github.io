@@ -3,6 +3,14 @@ layout: default
 title: News
 permalink: /news/
 news_items:
+  - date: "JUL 2026"
+    title: "Welcome new members: Fu Jieling, Han Moqi, and Zhou Yi joined the lab!"
+    excerpt: "We warmly welcome Fu Jieling, Han Moqi, and Zhou Yi as new members of the Functional Genomics Lab. We look forward to great science together!"
+    category: "people"
+  - date: "JUL 2026"
+    title: "Lab has moved to Room 516, New Biology Building, Jiangning Campus"
+    excerpt: "The Functional Genomics Lab is now located at Room 516, New Biology Building (新生物楼516室), Jiangning Campus, China Pharmaceutical University."
+    category: "announcement"
   - date: "APR 2026"
     title: "Joined China Pharmaceutical University"
     excerpt: "Started as Professor (Ph.D. Advisor) at China Pharmaceutical University in April 2026."

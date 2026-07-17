@@ -319,7 +319,8 @@ permalink: /contact/
                 </h3>
                 <div class="contact-details">
                     <p>China Pharmaceutical University<br>
-                    School of Basic and Clinical Medicine</p>
+                    Jiangning Campus, New Biology Building, Room 516<br>
+                    <span style="font-size:0.9em;color:#666;">中国药科大学 江宁校区 新生物楼 516室</span></p>
                 </div>
             </div>
 

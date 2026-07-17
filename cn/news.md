@@ -3,6 +3,14 @@ layout: default
 title: 新闻
 permalink: /cn/news/
 news_items:
+  - date: "2026年7月"
+    title: "欢迎新成员：符捷玲、韩默琦、周轶加入实验室！"
+    excerpt: "热烈欢迎符捷玲、韩默琦、周轶加入功能基因组学实验室，期待我们共同探索、共创佳绩！"
+    category: "people"
+  - date: "2026年7月"
+    title: "实验室新址：江宁校区新生物楼516室"
+    excerpt: "实验室已正式迁入中国药科大学江宁校区新生物楼516室，欢迎来访交流。"
+    category: "announcement"
   - date: "2026年4月"
     title: "入职中国药科大学"
     excerpt: "于 2026 年 4 月入职中国药科大学，担任教授（博士生导师）。"

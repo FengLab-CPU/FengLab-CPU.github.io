@@ -161,9 +161,9 @@ title: 首页
         flex: 1;
         position: relative;
         overflow: hidden;
-        height: 2.56rem;
+        height: calc(2.4rem * 3);
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     
     .ticker-track::before,
@@ -172,27 +172,28 @@ title: 首页
         position: absolute;
         left: 0;
         right: 0;
-        height: 18px;
+        height: 16px;
         pointer-events: none;
         z-index: 2;
     }
     
     .ticker-track::before {
         top: 0;
-        background: linear-gradient(180deg, rgba(248, 250, 255, 0.85), transparent);
+        background: linear-gradient(180deg, rgba(248, 250, 255, 0.9), transparent);
     }
     
     .ticker-track::after {
         bottom: 0;
-        background: linear-gradient(0deg, rgba(248, 250, 255, 0.85), transparent);
+        background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), transparent);
     }
     
     .ticker-inner {
         display: flex;
         flex-direction: column;
         gap: 0;
-        animation: tickerScrollY 20s linear infinite;
+        animation: tickerScrollY 18s linear infinite;
         animation-play-state: running;
+        width: 100%;
     }
 
     .hero-ticker:hover .ticker-inner {
@@ -203,24 +204,28 @@ title: 首页
         white-space: nowrap;
         font-weight: 600;
         color: #1f2a44;
-        font-size: 0.98rem;
+        font-size: 0.95rem;
         display: flex;
         align-items: center;
         gap: 0.65rem;
-        min-height: 1.92rem;
-        padding: 0.2rem 0;
+        height: 2.4rem;
+        padding: 0;
         text-decoration: none;
+        overflow: hidden;
     }
     
     .ticker-date {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         font-weight: 700;
         color: #5a6bb0;
         letter-spacing: 0.05em;
+        flex-shrink: 0;
     }
     
     .ticker-title {
         color: #1f2a44;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .ticker-item:hover .ticker-title {
@@ -235,6 +240,7 @@ title: 首页
         display: inline-flex;
         align-items: center;
         gap: 0.25rem;
+        flex-shrink: 0;
     }
     
     .ticker-link:hover {
@@ -347,29 +353,28 @@ title: 首页
 </div>
 
 <!-- News Ticker moved below hero -->
-{% assign news_page = site.pages | where: "path", "news.md" | first %}
-{% if news_page and news_page.news_items and news_page.news_items.size > 0 %}
+{% assign cn_news_page = site.pages | where: "path", "cn/news.md" | first %}
+{% if cn_news_page and cn_news_page.news_items and cn_news_page.news_items.size > 0 %}
 <div class="hero-ticker">
-    <span class="ticker-label">最新动态</span>
+    <span class="ticker-label">新闻动态</span>
     <div class="ticker-track">
         <div class="ticker-inner">
-            {% for item in news_page.news_items limit: 4 %}
-            <a class="ticker-item" href="/news/">
+            {% for item in cn_news_page.news_items limit: 3 %}
+            <a class="ticker-item" href="/cn/news/">
                 <span class="ticker-date">{{ item.date }}</span>
                 <span class="ticker-title">{{ item.title }}</span>
             </a>
             {% endfor %}
-            <span class="ticker-duplicate">
-            {% for item in news_page.news_items limit: 4 %}
-            <a class="ticker-item" href="/news/">
+            {% comment %}Duplicate for seamless loop{% endcomment %}
+            {% for item in cn_news_page.news_items limit: 3 %}
+            <a class="ticker-item" href="/cn/news/">
                 <span class="ticker-date">{{ item.date }}</span>
                 <span class="ticker-title">{{ item.title }}</span>
             </a>
             {% endfor %}
-            </span>
         </div>
     </div>
-    <a class="ticker-link" href="/news/">查看全部 →</a>
+    <a class="ticker-link" href="/cn/news/">查看全部 →</a>
 </div>
 {% endif %}
 

@@ -213,9 +213,9 @@
         flex: 1;
         position: relative;
         overflow: hidden;
-        height: 2.56rem;
+        height: calc(2.4rem * 3);
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     
     .ticker-track::before,
@@ -224,27 +224,28 @@
         position: absolute;
         left: 0;
         right: 0;
-        height: 18px;
+        height: 16px;
         pointer-events: none;
         z-index: 2;
     }
     
     .ticker-track::before {
         top: 0;
-        background: linear-gradient(180deg, rgba(248, 250, 255, 0.85), transparent);
+        background: linear-gradient(180deg, rgba(248, 250, 255, 0.9), transparent);
     }
     
     .ticker-track::after {
         bottom: 0;
-        background: linear-gradient(0deg, rgba(248, 250, 255, 0.85), transparent);
+        background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), transparent);
     }
     
     .ticker-inner {
         display: flex;
         flex-direction: column;
         gap: 0;
-        animation: tickerScrollY 20s linear infinite;
+        animation: tickerScrollY 18s linear infinite;
         animation-play-state: running;
+        width: 100%;
     }
 
     .hero-ticker:hover .ticker-inner {
@@ -255,24 +256,28 @@
         white-space: nowrap;
         font-weight: 600;
         color: #1f2a44;
-        font-size: 0.98rem;
+        font-size: 0.95rem;
         display: flex;
         align-items: center;
         gap: 0.65rem;
-        min-height: 1.92rem;
-        padding: 0.2rem 0;
+        height: 2.4rem;
+        padding: 0;
         text-decoration: none;
+        overflow: hidden;
     }
     
     .ticker-date {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         font-weight: 700;
         color: #5a6bb0;
         letter-spacing: 0.05em;
+        flex-shrink: 0;
     }
     
     .ticker-title {
         color: #1f2a44;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .ticker-item:hover .ticker-title {
@@ -287,6 +292,7 @@
         display: inline-flex;
         align-items: center;
         gap: 0.25rem;
+        flex-shrink: 0;
     }
     
     .ticker-link:hover {
@@ -401,26 +407,45 @@
 <!-- News Ticker moved below hero -->
 
 <div class="hero-ticker">
-    <span class="ticker-label">最新动态</span>
+    <span class="ticker-label">新闻动态</span>
     <div class="ticker-track">
         <div class="ticker-inner">
             
-            <a class="ticker-item" href="/news/">
-                <span class="ticker-date">APR 2026</span>
-                <span class="ticker-title">Joined China Pharmaceutical University</span>
+            <a class="ticker-item" href="/cn/news/">
+                <span class="ticker-date">2026年7月</span>
+                <span class="ticker-title">欢迎新成员：符捷玲、韩默琦、周轶加入实验室！</span>
             </a>
             
-            <span class="ticker-duplicate">
-            
-            <a class="ticker-item" href="/news/">
-                <span class="ticker-date">APR 2026</span>
-                <span class="ticker-title">Joined China Pharmaceutical University</span>
+            <a class="ticker-item" href="/cn/news/">
+                <span class="ticker-date">2026年7月</span>
+                <span class="ticker-title">实验室新址：江宁校区新生物楼516室</span>
             </a>
             
-            </span>
+            <a class="ticker-item" href="/cn/news/">
+                <span class="ticker-date">2026年4月</span>
+                <span class="ticker-title">入职中国药科大学</span>
+            </a>
+            
+            
+            
+            <a class="ticker-item" href="/cn/news/">
+                <span class="ticker-date">2026年7月</span>
+                <span class="ticker-title">欢迎新成员：符捷玲、韩默琦、周轶加入实验室！</span>
+            </a>
+            
+            <a class="ticker-item" href="/cn/news/">
+                <span class="ticker-date">2026年7月</span>
+                <span class="ticker-title">实验室新址：江宁校区新生物楼516室</span>
+            </a>
+            
+            <a class="ticker-item" href="/cn/news/">
+                <span class="ticker-date">2026年4月</span>
+                <span class="ticker-title">入职中国药科大学</span>
+            </a>
+            
         </div>
     </div>
-    <a class="ticker-link" href="/news/">查看全部 →</a>
+    <a class="ticker-link" href="/cn/news/">查看全部 →</a>
 </div>
 
 <!-- Language switch handled globally in header -->

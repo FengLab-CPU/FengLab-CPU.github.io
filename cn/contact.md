@@ -201,7 +201,7 @@ permalink: /cn/contact/
                 </h3>
                 <div class="contact-details">
                     <p>中国药科大学<br>
-                    基础医学与临床药学学院</p>
+                    江宁校区 新生物楼 516室</p>
                 </div>
             </div>
 

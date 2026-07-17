@@ -289,9 +289,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
         font-size: 2.5rem;
         color: var(--primary-color);
         transition: all 0.3s ease;
+    }
+
+    .person-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
     }
     
     .person-card:hover .person-photo {
@@ -781,42 +789,28 @@
             </div>
 
             <div class="person-card">
-                <div class="person-photo">👩‍🎓</div>
+                <div class="person-photo"><img src="/assets/images/fu-jieling.jpg" alt="Fu Jieling" /></div>
                 <div class="person-info">
-                    <div class="person-name">Graduate Student 1</div>
-                    <div class="person-title">PhD Student</div>
+                    <div class="person-name">Fu Jieling</div>
+                    <div class="person-title">Lab Manager</div>
                 </div>
             </div>
-            
+
             <div class="person-card">
-                <div class="person-photo">👨‍🎓</div>
+                <div class="person-photo"><img src="/assets/images/han-moqi.jpg" alt="Han Moqi" /></div>
                 <div class="person-info">
-                    <div class="person-name">Graduate Student 2</div>
-                    <div class="person-title">PhD Student</div>
-                </div>
-            </div>
-            
-            <div class="person-card">
-                <div class="person-photo">👩‍🔬</div>
-                <div class="person-info">
-                    <div class="person-name">Postdoc Researcher</div>
-                    <div class="person-title">Postdoc Researcher</div>
-                </div>
-            </div>
-            
-            <div class="person-card">
-                <div class="person-photo">👨‍💻</div>
-                <div class="person-info">
-                    <div class="person-name">Research Specialist</div>
-                    <div class="person-title">Research Specialist</div>
-                </div>
-            </div>
-            
-            <div class="person-card">
-                <div class="person-photo">👩‍🔬</div>
-                <div class="person-info">
-                    <div class="person-name">Undergraduate Student</div>
+                    <div class="person-name">Han Moqi</div>
                     <div class="person-title">Undergraduate Student</div>
+                    <div class="person-dept">Class of 2024</div>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <div class="person-photo"><img src="/assets/images/zhou-yi.jpg" alt="Zhou Yi" /></div>
+                <div class="person-info">
+                    <div class="person-name">Zhou Yi</div>
+                    <div class="person-title">Master's Student</div>
+                    <div class="person-dept">Class of 2026</div>
                 </div>
             </div>
             
@@ -836,12 +830,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><strong>Sample Alumni 1</strong></td>
-                    <td>PhD Student</td>
-                    <td class="year-cell">2023</td>
-                    <td class="current-cell">Postdoc, PKU</td>
-                </tr>
                 <tr>
                     <td><strong>Sample Alumni 4</strong></td>
                     <td>Research Specialist</td>

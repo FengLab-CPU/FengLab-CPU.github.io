@@ -224,9 +224,17 @@ permalink: /cn/people/
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
         font-size: 2.5rem;
         color: var(--primary-color);
         transition: all 0.3s ease;
+    }
+
+    .person-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
     }
 
     .person-card:hover .person-photo {
@@ -441,48 +449,34 @@ permalink: /cn/people/
                 <div class="person-photo">👨‍🎓</div>
                 <div class="person-info">
                     <div class="person-name">戴图澄</div>
-                    <div class="person-title">博士研究生</div>
+                    <div class="person-title">博士生</div>
                     <div class="person-dept">2026级</div>
                 </div>
             </div>
 
             <div class="person-card">
-                <div class="person-photo">👩‍🎓</div>
+                <div class="person-photo"><img src="/assets/images/fu-jieling.jpg" alt="符捷玲"></div>
                 <div class="person-info">
-                    <div class="person-name">研究生 1</div>
-                    <div class="person-title">博士研究生</div>
+                    <div class="person-name">符捷玲</div>
+                    <div class="person-title">实验室管理员</div>
                 </div>
             </div>
 
             <div class="person-card">
-                <div class="person-photo">👨‍🎓</div>
+                <div class="person-photo"><img src="/assets/images/han-moqi.jpg" alt="韩默琦"></div>
                 <div class="person-info">
-                    <div class="person-name">研究生 2</div>
-                    <div class="person-title">博士研究生</div>
+                    <div class="person-name">韩默琦</div>
+                    <div class="person-title">本科生</div>
+                    <div class="person-dept">2024级</div>
                 </div>
             </div>
 
             <div class="person-card">
-                <div class="person-photo">👩‍🔬</div>
+                <div class="person-photo"><img src="/assets/images/zhou-yi.jpg" alt="周轶"></div>
                 <div class="person-info">
-                    <div class="person-name">博士后</div>
-                    <div class="person-title">博士后研究员</div>
-                </div>
-            </div>
-
-            <div class="person-card">
-                <div class="person-photo">👨‍💻</div>
-                <div class="person-info">
-                    <div class="person-name">科研助理</div>
-                    <div class="person-title">研究专员</div>
-                </div>
-            </div>
-
-            <div class="person-card">
-                <div class="person-photo">👩‍🔬</div>
-                <div class="person-info">
-                    <div class="person-name">本科生</div>
-                    <div class="person-title">本科科研助理</div>
+                    <div class="person-name">周轶</div>
+                    <div class="person-title">硕士生</div>
+                    <div class="person-dept">2026级</div>
                 </div>
             </div>
         </div>
@@ -500,12 +494,6 @@ permalink: /cn/people/
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><strong>示例校友 1</strong></td>
-                    <td>博士研究生</td>
-                    <td class="year-cell">2023</td>
-                    <td class="current-cell">博士后，某高校</td>
-                </tr>
                 <tr>
                     <td><strong>示例校友 2</strong></td>
                     <td>研究专员</td>

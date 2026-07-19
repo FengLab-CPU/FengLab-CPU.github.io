@@ -4,8 +4,12 @@ title: News
 permalink: /news/
 news_items:
   - date: "JUL 2026"
+    title: "Welcome new undergraduate members: Yao Siyi and Zeng Junjie joined the lab!"
+    excerpt: "We warmly welcome Yao Siyi and Zeng Junjie, Class of 2022 Clinical Pharmacy undergraduates (3+1+X Program), as new members of the Functional Genomics Lab!"
+    category: "people"
+  - date: "JUL 2026"
     title: "Welcome new members: Fu Jieling, Han Moqi, and Zhou Yi joined the lab!"
-    excerpt: "We warmly welcome Fu Jieling, Han Moqi, and Zhou Yi as new members of the Functional Genomics Lab. We look forward to great science together!"
+    excerpt: "We warmly welcome Fu Jieling, Han Moqi, and Zhou Yi as new members of the Functional Genomics Lab!"
     category: "people"
   - date: "JUL 2026"
     title: "Lab has moved to Room 516, New Biology Building, Jiangning Campus"

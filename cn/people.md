@@ -479,6 +479,26 @@ permalink: /cn/people/
                     <div class="person-dept">2026级</div>
                 </div>
             </div>
+
+            <div class="person-card">
+                <div class="person-photo"><img src="/assets/images/yao-siyi.jpg" alt="姚思毅"></div>
+                <div class="person-info">
+                    <div class="person-name">姚思毅</div>
+                    <div class="person-title">本科生</div>
+                    <div class="person-dept">2022级 临床药学</div>
+                    <div class="person-dept">3+1+X项目</div>
+                </div>
+            </div>
+
+            <div class="person-card">
+                <div class="person-photo">👨‍🎓</div>
+                <div class="person-info">
+                    <div class="person-name">曾俊杰</div>
+                    <div class="person-title">本科生</div>
+                    <div class="person-dept">2022级 临床药学</div>
+                    <div class="person-dept">3+1+X项目</div>
+                </div>
+            </div>
         </div>
     </div>
 
